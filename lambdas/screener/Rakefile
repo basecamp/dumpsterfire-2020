@@ -1,0 +1,27 @@
+desc 'Package Function'
+task :package do
+  package_name = File.basename(File.expand_path(__dir__))
+  puts 'Bundling Gems'
+  %x(bundle config set path 'vendor/bundle' --local)
+  %x(bundle install)
+  puts 'Cleaning up old package'
+  if $?.exitstatus.zero?
+    %x(rm -f #{package_name}.zip)
+  else
+    warn 'Failed to bundle gems!'
+    exit(false)
+  end
+  puts 'Creating new package'
+  if $?.exitstatus.zero?
+    %x(zip -q -r #{package_name}.zip *.rb lib vendor)
+  else
+    warn 'Failed to cleanup old package!'
+    exit(false)
+  end
+  if $?.exitstatus.zero?
+    puts 'Done!'
+  else
+    warn 'Failed to create new package!'
+    exit(false)
+  end
+end

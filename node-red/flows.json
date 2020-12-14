@@ -1,0 +1,3141 @@
+[
+  {
+    "id": "2a2287de.7c1998",
+    "type": "tab",
+    "label": "ShowQueuePages",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "ec49a7ce.ca4ef8",
+    "type": "tab",
+    "label": "PerformDumpsterAction",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "f59ea294.3b9c5",
+    "type": "tab",
+    "label": "Testing",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "d0d286c.b945c78",
+    "type": "tab",
+    "label": "Websockets",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "cba59ebe.75887",
+    "type": "tab",
+    "label": "PrintLoop.v2",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "4d2b5aa1.2e05cc",
+    "type": "subflow",
+    "name": "PurgeJob",
+    "info": "",
+    "category": "",
+    "in": [
+      {
+        "x": 40,
+        "y": 120,
+        "wires": [
+          {
+            "id": "f612b6fb.e52f8"
+          }
+        ]
+      }
+    ],
+    "out": [
+      {
+        "x": 760,
+        "y": 120,
+        "wires": [
+          {
+            "id": "d1c56f42.814838",
+            "port": 0
+          }
+        ]
+      }
+    ],
+    "env": [],
+    "color": "#DDAA99"
+  },
+  {
+    "id": "7dbceb22.f70cf4",
+    "type": "subflow",
+    "name": "EmptyPage",
+    "info": "",
+    "category": "",
+    "in": [
+      {
+        "x": 20,
+        "y": 80,
+        "wires": [
+          {
+            "id": "dc9dbb26.b78c7"
+          }
+        ]
+      }
+    ],
+    "out": [
+      {
+        "x": 360,
+        "y": 80,
+        "wires": [
+          {
+            "id": "dc9dbb26.b78c7",
+            "port": 0
+          }
+        ]
+      }
+    ],
+    "env": [],
+    "color": "#DDAA99"
+  },
+  {
+    "id": "7ffb5855.e50d7",
+    "type": "subflow",
+    "name": "SetMsgValues",
+    "info": "",
+    "category": "",
+    "in": [
+      {
+        "x": 40,
+        "y": 80,
+        "wires": [
+          {
+            "id": "4c783328.03dc2c"
+          }
+        ]
+      }
+    ],
+    "out": [
+      {
+        "x": 360,
+        "y": 80,
+        "wires": [
+          {
+            "id": "4c783328.03dc2c",
+            "port": 0
+          }
+        ]
+      }
+    ],
+    "env": [],
+    "color": "#DDAA99"
+  },
+  {
+    "id": "ae167794.18da58",
+    "type": "subflow",
+    "name": "SetQueueDepth",
+    "info": "",
+    "category": "",
+    "in": [
+      {
+        "x": 80,
+        "y": 40,
+        "wires": [
+          {
+            "id": "99820eef.314de8"
+          }
+        ]
+      }
+    ],
+    "out": [
+      {
+        "x": 1060,
+        "y": 100,
+        "wires": [
+          {
+            "id": "14dddfde.db4d38",
+            "port": 0
+          }
+        ]
+      }
+    ],
+    "env": [],
+    "color": "#DDAA99"
+  },
+  {
+    "id": "21a0d81f.c9f93",
+    "type": "subflow",
+    "name": "PopJob",
+    "info": "",
+    "category": "",
+    "in": [
+      {
+        "x": 60,
+        "y": 80,
+        "wires": [
+          {
+            "id": "506b59da.4b4dd"
+          }
+        ]
+      }
+    ],
+    "out": [
+      {
+        "x": 720,
+        "y": 80,
+        "wires": [
+          {
+            "id": "81c9037c.206018",
+            "port": 0
+          }
+        ]
+      },
+      {
+        "x": 560,
+        "y": 140,
+        "wires": [
+          {
+            "id": "448eecae.555b7c",
+            "port": 1
+          }
+        ]
+      }
+    ],
+    "env": [],
+    "color": "#DDAA99"
+  },
+  {
+    "id": "2675acfa.2e92f4",
+    "type": "subflow",
+    "name": "GetFileFromS3",
+    "info": "",
+    "category": "",
+    "in": [
+      {
+        "x": 40,
+        "y": 80,
+        "wires": [
+          {
+            "id": "5f94d665.46eea"
+          }
+        ]
+      }
+    ],
+    "out": [
+      {
+        "x": 960,
+        "y": 80,
+        "wires": [
+          {
+            "id": "57614758.9da5",
+            "port": 0
+          }
+        ]
+      },
+      {
+        "x": 640,
+        "y": 140,
+        "wires": [
+          {
+            "id": "6d72cbea.22732c",
+            "port": "1"
+          }
+        ]
+      }
+    ],
+    "env": [],
+    "color": "#DDAA99"
+  },
+  {
+    "id": "46b89829.e8f2d8",
+    "type": "subflow",
+    "name": "ShowQueuePage",
+    "info": "",
+    "category": "",
+    "in": [
+      {
+        "x": 40,
+        "y": 60,
+        "wires": [
+          {
+            "id": "eaa3cdb9.cf762"
+          }
+        ]
+      }
+    ],
+    "out": [
+      {
+        "x": 800,
+        "y": 140,
+        "wires": [
+          {
+            "id": "91573ce.723e4c",
+            "port": 0
+          },
+          {
+            "id": "9b2f777e.bb7148",
+            "port": 0
+          },
+          {
+            "id": "d632d1ef.ba0bc",
+            "port": 0
+          },
+          {
+            "id": "f3b55ea2.f4d51",
+            "port": 0
+          }
+        ]
+      }
+    ],
+    "env": [],
+    "color": "#DDAA99"
+  },
+  {
+    "id": "b95a27f8.581ed8",
+    "type": "subflow",
+    "name": "PrintAndBurn",
+    "info": "",
+    "category": "",
+    "in": [
+      {
+        "x": 40,
+        "y": 80,
+        "wires": [
+          {
+            "id": "e4082960.197798"
+          }
+        ]
+      }
+    ],
+    "out": [
+      {
+        "x": 960,
+        "y": 160,
+        "wires": [
+          {
+            "id": "d4fa1076.7ebc08",
+            "port": 0
+          },
+          {
+            "id": "14552e16.e2182a",
+            "port": 0
+          }
+        ]
+      }
+    ],
+    "env": [],
+    "color": "#DDAA99"
+  },
+  {
+    "id": "2f257e7a.6ba06a",
+    "type": "subflow",
+    "name": "ModerateJob",
+    "info": "",
+    "category": "",
+    "in": [
+      {
+        "x": 60,
+        "y": 80,
+        "wires": [
+          {
+            "id": "774a94a5.ea0ea4"
+          }
+        ]
+      }
+    ],
+    "out": [
+      {
+        "x": 920,
+        "y": 140,
+        "wires": [
+          {
+            "id": "adf9a16f.a95728",
+            "port": 0
+          },
+          {
+            "id": "e432ed74.92d6a",
+            "port": 0
+          }
+        ]
+      }
+    ],
+    "env": [],
+    "color": "#DDAA99"
+  },
+  {
+    "id": "8e34c086.0a708",
+    "type": "aws-sdk-config",
+    "name": "Printer",
+    "accesskey": "",
+    "secretkey": "",
+    "region": "us-east-1",
+    "iamrole": false
+  },
+  {
+    "id": "6ac666d3.8bc48",
+    "type": "websocket-listener",
+    "path": "/ws/status",
+    "wholemsg": "false"
+  },
+  {
+    "id": "79bc775e.594fc",
+    "type": "websocket-listener",
+    "path": "/ws/control",
+    "wholemsg": "false"
+  },
+  {
+    "id": "f612b6fb.e52f8",
+    "type": "aws sdk",
+    "z": "4d2b5aa1.2e05cc",
+    "name": "DeleteJobFromQueue",
+    "func": "console.log(\"PurgeJobFromQueue\")\nvar sqs = new AWS.SQS();\nvar params = {\n    QueueUrl: msg.payload,\n    ReceiptHandle: msg.metadata.ReceiptHandle\n};\n\ntry {\n  sqs.deleteMessage(params, function(err, data){\n      if (err){\n          console.log(\"Error deleting message\");\n          console.log(err);\n          msg.success = false;\n          callback(msg);\n      } else {\n          msg.payload = data;\n          delete msg.Message;\n          msg.success = true;\n          callback(msg);\n      }\n  });\n} catch(e) {\n  console.log(\"We failed hard: \"+e);\n}",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 220,
+    "y": 120,
+    "wires": [
+      [
+        "defaf6c5.12b09"
+      ]
+    ],
+    "icon": "font-awesome/fa-remove"
+  },
+  {
+    "id": "defaf6c5.12b09",
+    "type": "aws sdk",
+    "z": "4d2b5aa1.2e05cc",
+    "name": "DeleteJobFromS3",
+    "func": "console.log(\"DeleteJobFromS3\");\nvar s3 = new AWS.S3();\nvar params = {\n  Bucket: msg.job.bucket,\n  Key: msg.job.key\n};\n\nif (msg.success){\ns3.deleteObject(params, function(err, data){\n  if (err) {\n    console.log(err, err.stack);\n    msg.payload = err;\n    callback(msg);\n  } else {\n    delete msg.job;\n    msg.payload = data;\n    callback(msg);\n  }\n});\n} else {\n    return msg;\n}\n\n",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 430,
+    "y": 120,
+    "wires": [
+      [
+        "d1c56f42.814838"
+      ]
+    ]
+  },
+  {
+    "id": "1e0841f1.ac68fe",
+    "type": "http in",
+    "z": "2a2287de.7c1998",
+    "name": "",
+    "url": "/normal",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 110,
+    "y": 40,
+    "wires": [
+      [
+        "8deff065.dbcac"
+      ]
+    ]
+  },
+  {
+    "id": "4c783328.03dc2c",
+    "type": "function",
+    "z": "7ffb5855.e50d7",
+    "name": "Set msg values",
+    "func": "msg.web = {};\nmsg.sqs = {\n    normal: {\n        raw: \"https://sqs.us-east-1.amazonaws.com/729823136633/dumpsterfire-print.fifo\",\n        moderated: \"https://sqs.us-east-1.amazonaws.com/729823136633/dumpsterfire-moderated.fifo\"\n    },\n    vip: {\n        raw: \"https://sqs.us-east-1.amazonaws.com/729823136633/dumpsterfire-print-vip.fifo\",\n        moderated: \"https://sqs.us-east-1.amazonaws.com/729823136633/dumpsterfire-moderated-vip.fifo\"\n    },\n    alpha: {\n        raw: \"https://sqs.us-east-1.amazonaws.com/729823136633/dumpsterfire-print-alpha.fifo\",\n        moderated: \"https://sqs.us-east-1.amazonaws.com/729823136633/dumpsterfire-moderated-alpha.fifo\"\n    },\n    complete: {\n        url: \"https://sqs.us-east-1.amazonaws.com/729823136633/dumpsterfire-complete.fifo\"\n    },\n    lock: {\n        url: \"https://sqs.us-east-1.amazonaws.com/729823136633/dumpsterfire-lock.fifo\"\n    },\n    debug: {\n        url: \"https://sqs.us-east-1.amazonaws.com/729823136633/dumpsterfire-debug.fifo\"\n    }\n};\nmsg.stats = {\n    vip: {},\n    normal: {},\n    alpha: {},\n    lock: {},\n    total: {}\n};\n\nmsg.rules = {\n    bucket: \"dumpsterfire-rules\",\n    key: \"rules.json\"\n}\n\nmsg.font = {\n    name: \"Monospace\",\n    size: \"32\"\n}\n\n// Handle the restart case, where flow.active isn't set\nif (typeof(flow.get(\"active\")) === \"undefined\"){\n    console.log(\"Setting flow.active\");\n    flow.set(\"active\", false);\n}\n\nmsg.control = {\n    print: 1,\n    burn: 1,\n    record: 1,\n    notify: 1,\n    cleanup: 1,\n    timing: {\n        fire: {\n            duration: 30,\n            delay: 13\n        },\n        belt: {\n            duration: {\n                pre: 11.7,\n                post: 6,\n                pause: 5\n            }\n        },\n        camera: {\n            delay: 4\n        }\n    },\n    lock:{\n        print: \"/tmp/print.lock\",\n        burn: \"/tmp/burn.lock\"\n    }\n}\n\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 200,
+    "y": 80,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "d2c0bc2a.05a02",
+    "type": "http response",
+    "z": "2a2287de.7c1998",
+    "name": "",
+    "x": 830,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "f3b55ea2.f4d51",
+    "type": "template",
+    "z": "46b89829.e8f2d8",
+    "name": "JobHTML",
+    "field": "payload",
+    "fieldType": "msg",
+    "format": "handlebars",
+    "syntax": "mustache",
+    "template": "<html>\n\n<head>\n  <title>hey.science DumpsterFire</title>\n  <meta name=\"viewport\" content=\"initial-scale=1.0, user-scalable=no\">\n  <meta http-equiv=\"Cache-Control\" content=\"no-cache, no-store, must-revalidate\" />\n  <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n  <meta http-equiv=\"Expires\" content=\"0\" />\n  <meta charset=\"utf-8\">\n  <link rel=\"stylesheet\" href=\"//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic\">\n\n  <!-- CSS Reset -->\n  <link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css\">\n\n  <!-- Milligram CSS -->\n  <link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css\">\n  <link rel=\"stylesheet\" href=\"//cdn.jsdelivr.net/gh/loadingio/ldbutton@v1.0.1/dist/ldbtn.min.css\" />\n  <style>\n    .navbar {\n      margin-bottom: 10px;\n    }\n\n    .navbar ul {\n      list-style-type: none;\n      margin: 0;\n      padding: 0;\n      overflow: hidden;\n      background-color: #606c76;\n    }\n\n    .navbar li {\n      float: left;\n      margin-bottom: 0;\n    }\n\n    .navbar li a {\n      display: block;\n      color: white;\n      text-align: center;\n      padding: 14px 16px;\n      text-decoration: none;\n    }\n\n    .navbar li span.message {\n      display: inline-block;\n      color: white;\n      text-align: center;\n      padding: 14px 16px;\n      text-decoration: none;\n    }\n\n    .navbar li a:hover {\n      background-color: #ab5dda;\n    }\n\n    .navbar li a.active {\n      text-decoration: underline;\n      color: #ab5dda;\n      background-color: white;\n    }\n\n    body.alpha .navbar li a.alpha,\n    body.vip .navbar li a.vip,\n    body.normal .navbar li a.normal,\n    body.testing .navbar li a.testing {\n      color: #ab5dda;\n      background-color: white;\n    }\n\n    .navbar li span span {\n      padding: 0;\n    }\n\n    .navbar li a.count {\n      padding: 0.88rem 1rem;\n    }\n\n    .navbar li .count {\n      background-color: #9b4dca;\n      border: none;\n      color: white;\n      padding: .36rem .375rem;\n      text-align: center;\n      display: inline-block;\n      font-weight: 600;\n      font-size: 140%;\n    }\n\n    .navbar form {\n      margin-bottom: 0;\n    }\n\n    .navbar button {\n      margin: 0;\n      display: block;\n      color: white;\n      text-align: center;\n      text-decoration: none;\n      padding: 6.5px 16px;\n      border-radius: 0;\n      height: auto;\n      font-size: 100%;\n    }\n\n    pre>code {\n      white-space: pre-wrap;\n    }\n\n    .button-red {\n      background-color: red;\n      border-color: red;\n    }\n\n    .button-red.button-clear,\n    .button-red.button-outline {\n      background-color: transparent;\n      color: red;\n    }\n\n    .button-red.button-clear {\n      border-color: transparent;\n    }\n\n    .button-green {\n      background-color: #25bc32;\n      border-color: #25bc32;\n    }\n\n    .button-green.button-clear,\n    .button-green.button-outline {\n      background-color: transparent;\n      color: #25bc32;\n    }\n\n    .button-green.button-clear {\n      border-color: transparent;\n    }\n\n    .small {\n      font-size: 70%;\n    }\n\n    fieldset {\n      border-width: 1px;\n      padding: 2rem;\n    }\n\n    legend {\n      padding: 0 1rem;\n    }\n\n    .spinner {\n      width: 40px;\n      height: 40px;\n      margin-top: 10px;\n      background-color: #9b4dca;\n\n      border-radius: 100%;\n      -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;\n      animation: sk-scaleout 1.0s infinite ease-in-out;\n    }\n\n    @-webkit-keyframes sk-scaleout {\n      0% {\n        -webkit-transform: scale(0)\n      }\n\n      100% {\n        -webkit-transform: scale(1.0);\n        opacity: 0;\n      }\n    }\n\n    @keyframes sk-scaleout {\n      0% {\n        -webkit-transform: scale(0);\n        transform: scale(0);\n      }\n\n      100% {\n        -webkit-transform: scale(1.0);\n        transform: scale(1.0);\n        opacity: 0;\n      }\n    }\n  </style>\n</head>\n\n<body class=\"{{current.page}}\" onload=\"main();\" onunload=\"disconnect();\">\n  <div class='navbar'>\n    <ul>\n      <li><a class=\"normal count\" href=\"/normal\">Queue:\n          <span id=\"normal_count\"></span>/<span id=\"normal_raw\"></span>\n        </a></li>\n      <li><a class=\"vip count\" href=\"/vip\">VIP:\n          <span id=\"vip_count\"></span>/<span id=\"vip_raw\"></span>\n        </a></li>\n      <li><a class=\"alpha count\" href=\"/alpha\">Special:\n          <span id=\"alpha_count\"></span>/<span id=\"alpha_raw\"></span>\n        </a></li>\n      <li><a class=\"testing\" href=\"/testing\">Low Level Controls</a></li>\n      <li style=\"float:right\">\n        <form method=\"post\" action=\"/ESTOP\"><button class=\"button-red\" type=\"submit\">EMERGENCY STOP!</button></form>\n      </li>\n      <li style=\"float:right\"><button id=\"dumpster-control\" onclick=\"toggleDumpster();\">STOP DUMPSTER</button></li>\n      <li style=\"float:right\"><span class=\"message\" id=\"status\"></span></li>\n      <li style=\"float:right\"><span class=\"message\" id=\"messages\"></span></li>\n    </ul>\n  </div>\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"column column-50\">\n        <h1>Email</h1>\n        <p>\n        <blockquote>Job Id: {{{job.id}}}</blockquote>\n        <pre><code>From: {{{job.email}}}</code></pre>\n        <pre><code>Hey?: {{{job.is_hey}}}</code></pre>\n        </p>\n        <p>\n          {{#job.dataURI}}\n          <img src=\"{{{job.dataURI}}}\" />\n          {{/job.dataURI}}\n          {{#job.strippedContent}}\n        <pre><code>{{{job.strippedContent}}}</code></pre>\n        {{/job.strippedContent}}\n        </p>\n      </div>\n      <div class=\"column column-50\">\n        <div class=\"row\">\n          <div class=\"column\">\n            <form method=\"post\" action=\"/{{current.page}}\">\n              <fieldset>\n                <legend>Happy Path</legend>\n                <input type=\"hidden\" id=\"receipt\" name=\"receipt\" value=\"{{metadata.ReceiptHandle}}\" />\n                <input type=\"hidden\" id=\"job\" name=\"job\" value=\"{{job.encoded}}\" />\n                <input type=\"hidden\" id=\"action\" name=\"action\" value=\"print\" />\n                <input type=\"hidden\" id=\"print\" name=\"print\" value=\"{{control.print}}\" />\n                <input type=\"hidden\" id=\"burn\" name=\"burn\" value=\"{{control.burn}}\" />\n                <input type=\"hidden\" id=\"record\" name=\"record\" value=\"{{control.record}}\" />\n                <p><input type=\"submit\" id=\"approve\" name=\"approve\" class=\"button-green\" value=\"Approve!\"> Put this in the print queue</p>\n                <p><input type=\"submit\" id=\"approve-and-print\" name=\"approve-and-print\" class=\"button-green vip\" value=\"Approve and Print!\"> Skip the queue, print this ASAP!</p>\n              </fieldset>\n            </form>\n            <form id=\"tools\" method=\"post\" action=\"/{{current.page}}\">\n              <fieldset>\n                <legend>Moderation Tools</legend>\n                <input type=\"hidden\" id=\"receipt\" name=\"receipt\" value=\"{{metadata.ReceiptHandle}}\" />\n                <input type=\"hidden\" id=\"job\" name=\"job\" value=\"{{job.encoded}}\" />\n                <input type=\"hidden\" id=\"action\" name=\"action\" value=\"skip\" />\n                <p><input type=\"submit\" name=\"skip-submit\" id=\"skip-submit\" value=\"Skip This Email!\"> or...</p>\n                <p><input type=\"submit\" name=\"skip-block-sender-submit\" id=\"skip-block-sender-submit\"\n                    value=\"Skip and Block Sender!\"> or...</p>\n                <input type=\"submit\" name=\"skip-block-domain-submit\" id=\"skip-block-domain-submit\"\n                  value=\"Skip and Block Domain!\">\n              </fieldset>\n            </form>\n            <form id=\"tools\" method=\"post\" action=\"/{{current.page}}\">\n                <input type=\"hidden\" id=\"receipt\" name=\"receipt\" value=\"{{metadata.ReceiptHandle}}\" />\n                <input type=\"hidden\" id=\"job\" name=\"job\" value=\"{{job.encoded}}\" />\n                <input type=\"hidden\" id=\"action\" name=\"action\" value=\"debug\" />\n                <fieldset>\n                  <legend>ERROR</legend>\n                  <input type=\"submit\" name=\"debug\" id=\"debug\"\n                  value=\"Debug This!\">\n              </fieldset>\n            </form>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <script type=\"text/javascript\">\n    var queueDepth = 0;\n    var ws;\n    var ctrl;\n    var wsUri = \"ws:\";\n    var loc = window.location;\n    var dumpster_active = true;\n    var curr_page = loc.pathname.substring(1)+\"_count\";\n    if (loc.protocol === \"https:\") { wsUri = \"wss:\"; }\n    wsUriBase = wsUri + \"//\" + loc.host;\n    statusUri = wsUriBase + \"/ws/status\";\n    controlUri = wsUriBase + \"/ws/control\";\n\n    // setup our two websockets with wsConnect/ctrlConnect\n    function wsConnect() {\n      console.log(\"connect\", statusUri);\n      ws = new WebSocket(statusUri);\n\n      ws.onmessage = function (msg) {\n        var data = JSON.parse(msg.data);\n\n        if (\"messages\" in data) {\n          handleMessages(data);\n        }\n      }\n\n      ws.onopen = function () {\n        document.getElementById('status').innerHTML = \"H.E.R.L. Dumpster\";\n      }\n\n      ws.onclose = function () {\n        document.getElementById('status').innerHTML = \"!!\";\n        setTimeout(wsConnect, 3000);\n      }\n    }\n\n    function ctrlConnect() {\n      console.log(\"connect\", controlUri);\n      ctrl = new WebSocket(controlUri);\n\n      ctrl.onmessage = function (msg) {\n        console.log(msg.data);\n        if(msg.data == \"ON\"){\n          dumpster_active = true;\n          document.getElementById(\"dumpster-control\").innerHTML = \"STOP DUMPSTER\";\n        } else {\n          // Set Paused\n          dumpster_active = false;\n          document.getElementById(\"dumpster-control\").innerHTML = \"START DUMPSTER\";\n        }\n      }\n\n      ctrl.onopen = function(){\n        setTimeout(ctrl.send(\"STATUS\"), 500);\n      }\n\n      ctrl.onclose = function () {\n        setTimeout(ctrlConnect, 3000);\n      }\n    }\n\n    // Convenience functions for page load/unload\n    function main() {\n      wsConnect();\n      ctrlConnect();\n    }\n\n    function disconnect(){\n      ws.disconnect();\n      ctrl.disconnect();\n    }\n\n    // Dumpster Control\n    function toggleDumpster(){\n      dumpster_active ? ctrl.send(\"OFF\") : ctrl.send(\"ON\");\n    }\n\n    function reload(ws, window) {\n      console.log(\"Reloading!\");\n      ws.close();\n      setTimeout(window.location.reload.bind(window.location), 100)\n    }\n\n    function replaceContent(target, content){\n      e = document.getElementById(target);\n      if (e) e.innerHTML = content;\n    }\n\n    function handleMessages(data) {\n      data.messages.forEach(msg => {\n        switch (msg.type) {\n          case \"Control\":\n            break;\n          case \"Message\":\n            if (msg.state == \"complete\") {\n              console.log(msg.state);\n              setTimeout(function () {\n                window.location.href = \"http://\" + loc.host + loc.pathname;\n              }, 1000);\n            }\n            document.getElementById(msg.target).innerHTML = msg.value;\n            setTimeout(function () {\n              document.getElementById(msg.target).innerHTML = \"\";\n            }, 10000);\n            break;\n          case \"QueueDepth\":\n            replaceContent(msg.target, msg.value);\n            break;\n          default:\n            console.log(\"UNHANDLED MSG TYPE: \", msg.type);\n        }\n      })\n    }\n  </script>\n</body>\n\n</html>\n",
+    "output": "str",
+    "x": 600,
+    "y": 240,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "99820eef.314de8",
+    "type": "aws sdk",
+    "z": "ae167794.18da58",
+    "name": "Set Normal QueueDepth",
+    "func": "var sqs = new AWS.SQS();\nvar params = {\n    QueueUrl: msg.sqs.normal.moderated,\n    AttributeNames: [ \"All\" ]\n};\n\nsqs.getQueueAttributes(params, function(err, data){\n    if (err){\n        console.log(\"Error getting message\");\n        console.log(err);\n        msg.stats.normal.state = err;\n        msg.stats.normal.count = 0;\n        callback(msg);\n    } else {\n        msg.stats.normal.count = Number(data.Attributes.ApproximateNumberOfMessages);\n        callback(msg);\n    }\n});\n",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 230,
+    "y": 40,
+    "wires": [
+      [
+        "fc336bfc.3e3a68"
+      ]
+    ]
+  },
+  {
+    "id": "506b59da.4b4dd",
+    "type": "aws sdk",
+    "z": "21a0d81f.c9f93",
+    "name": "GetJobFromQueue",
+    "func": "console.log(\"GetJobFromQueue\");\nvar sqs = new AWS.SQS();\n\nvar params = {\n    QueueUrl: msg.payload,\n    AttributeNames: [ \"All\" ],\n    MaxNumberOfMessages: 1,\n    WaitTimeSeconds: 10,\n    VisibilityTimeout: 300,\n};\n\nsqs.receiveMessage(params, function(err, data){\n//    console.log(\"data: \");\n//    console.log(data);\n    delete msg.queue;\n    if (err){\n        console.log(\"Error getting message\");\n        msg.payload = err;\n        callback(msg);\n    } else {\n        if (\"Messages\" in data){\n          msg.metadata = data.Messages[0];\n\n          msg.job = JSON.parse(msg.metadata.Body);\n          console.log(msg.job.key);\n          msg.job.queue = params.QueueUrl;\n        } else {\n        \n          msg.error = \"No message\";\n        }\n        \n        callback(msg);\n    }\n});\n",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 210,
+    "y": 80,
+    "wires": [
+      [
+        "448eecae.555b7c"
+      ]
+    ]
+  },
+  {
+    "id": "448eecae.555b7c",
+    "type": "switch",
+    "z": "21a0d81f.c9f93",
+    "name": "MessageCheck",
+    "property": "metadata",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "null"
+      },
+      {
+        "t": "nnull"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 2,
+    "x": 400,
+    "y": 80,
+    "wires": [
+      [
+        "81c9037c.206018"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "6d72cbea.22732c",
+    "type": "switch",
+    "z": "2675acfa.2e92f4",
+    "name": "S3DataCheck",
+    "property": "job.content",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "null"
+      },
+      {
+        "t": "nnull"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 2,
+    "x": 460,
+    "y": 80,
+    "wires": [
+      [
+        "ef1ae0d.48bfea"
+      ],
+      []
+    ]
+  },
+  {
+    "id": "5f94d665.46eea",
+    "type": "aws sdk",
+    "z": "2675acfa.2e92f4",
+    "name": "GetFileFromS3",
+    "func": "console.log(\"GetFileFromS3\");\nvar s3 = new AWS.S3();\nvar params = {\n  Bucket: msg.job.bucket,\n  Key: msg.job.key\n};\n\ns3.getObject(params, function(err, data){\n  if (err) {\n    // S3 Object doesn't exist.\n    console.log(err);\n    \n    callback(msg);\n  } else {\n    msg.job = Object.assign(msg.job, JSON.parse(data.Body.toString()));\n    callback(msg);\n  }\n});\n",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 200,
+    "y": 80,
+    "wires": [
+      [
+        "6d72cbea.22732c"
+      ]
+    ],
+    "icon": "font-awesome/fa-cloud-download"
+  },
+  {
+    "id": "2f65ffa.f181a",
+    "type": "function",
+    "z": "46b89829.e8f2d8",
+    "name": "CreatePreviewContent",
+    "func": "console.log(\"SanitizeTextContent\");\nlet st = global.get('striptags');\n\n// if we don't have an image grab the text\nif (msg.job.content_type.includes(\"image\")){\n    var parts = msg.job.content_type.split(';');\n    console.log(\"Content-Type parts: \"+parts.length);\n    msg.job.dataURI = \"data:\"+parts[0]+\";base64,\"+msg.job.content.replace(/\\n/,\"\");\n} else {\n    let buff = new Buffer(msg.job.content, 'base64');\n    msg.job.strippedContent = st(buff.toString());\n}\n\nlet job = Object.assign({}, msg.job);\ndelete job.content;\ndelete job.content_type;\ndelete job.strippedContent;\ndelete job.dataURI;\n\nmsg.job.encoded = new Buffer(JSON.stringify(job)).toString('base64');\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 220,
+    "y": 240,
+    "wires": [
+      [
+        "f3b55ea2.f4d51"
+      ]
+    ]
+  },
+  {
+    "id": "dc9dbb26.b78c7",
+    "type": "template",
+    "z": "7dbceb22.f70cf4",
+    "name": "EmptyQueueHTML",
+    "field": "payload",
+    "fieldType": "msg",
+    "format": "handlebars",
+    "syntax": "mustache",
+    "template": "<html>\n\n<head>\n  <title>hey.science DumpsterFire</title>\n  <meta name=\"viewport\" content=\"initial-scale=1.0, user-scalable=no\">\n  <meta http-equiv=\"Cache-Control\" content=\"no-cache, no-store, must-revalidate\" />\n  <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n  <meta http-equiv=\"Expires\" content=\"0\" />\n  <meta charset=\"utf-8\">\n  <link rel=\"stylesheet\" href=\"//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic\">\n\n  <!-- CSS Reset -->\n  <link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css\">\n\n  <!-- Milligram CSS -->\n  <link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css\">\n  <link rel=\"stylesheet\" href=\"//cdn.jsdelivr.net/gh/loadingio/ldbutton@v1.0.1/dist/ldbtn.min.css\" />\n  <style>\n    .navbar {\n      margin-bottom: 10px;\n    }\n\n    .navbar ul {\n      list-style-type: none;\n      margin: 0;\n      padding: 0;\n      overflow: hidden;\n      background-color: #606c76;\n    }\n\n    .navbar li {\n      float: left;\n      margin-bottom: 0;\n    }\n\n    .navbar li a {\n      display: block;\n      color: white;\n      text-align: center;\n      padding: 14px 16px;\n      text-decoration: none;\n    }\n\n    .navbar li span.message {\n      display: inline-block;\n      color: white;\n      text-align: center;\n      padding: 14px 16px;\n      text-decoration: none;\n    }\n\n    .navbar li a:hover {\n      background-color: #ab5dda;\n    }\n\n    .navbar li a.active {\n      text-decoration: underline;\n      color: #ab5dda;\n      background-color: white;\n    }\n\n    body.alpha .navbar li a.alpha,\n    body.vip .navbar li a.vip,\n    body.normal .navbar li a.normal,\n    body.testing .navbar li a.testing {\n      color: #ab5dda;\n      background-color: white;\n    }\n\n    .navbar li span span {\n      padding: 0;\n    }\n\n    .navbar li a.count {\n      padding: 0.88rem 1rem;\n    }\n\n    .navbar li .count {\n      background-color: #9b4dca;\n      border: none;\n      color: white;\n      padding: .36rem .375rem;\n      text-align: center;\n      display: inline-block;\n      font-weight: 600;\n      font-size: 140%;\n    }\n\n    .navbar form {\n      margin-bottom: 0;\n    }\n\n    .navbar button {\n      margin: 0;\n      display: block;\n      color: white;\n      text-align: center;\n      text-decoration: none;\n      padding: 6.5px 16px;\n      border-radius: 0;\n      height: auto;\n      font-size: 100%;\n    }\n\n    pre>code {\n      white-space: pre-wrap;\n    }\n\n    .button-red {\n      background-color: red;\n      border-color: red;\n    }\n\n    .button-red.button-clear,\n    .button-red.button-outline {\n      background-color: transparent;\n      color: red;\n    }\n\n    .button-red.button-clear {\n      border-color: transparent;\n    }\n\n    .button-green {\n      background-color: #25bc32;\n      border-color: #25bc32;\n    }\n\n    .button-green.button-clear,\n    .button-green.button-outline {\n      background-color: transparent;\n      color: #25bc32;\n    }\n\n    .button-green.button-clear {\n      border-color: transparent;\n    }\n\n    .small {\n      font-size: 70%;\n    }\n\n    fieldset {\n      border-width: 1px;\n      padding: 2rem;\n    }\n\n    legend {\n      padding: 0 1rem;\n    }\n\n    .spinner {\n      width: 40px;\n      height: 40px;\n      margin-top: 10px;\n      background-color: #9b4dca;\n\n      border-radius: 100%;\n      -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;\n      animation: sk-scaleout 1.0s infinite ease-in-out;\n    }\n\n    @-webkit-keyframes sk-scaleout {\n      0% {\n        -webkit-transform: scale(0)\n      }\n\n      100% {\n        -webkit-transform: scale(1.0);\n        opacity: 0;\n      }\n    }\n\n    @keyframes sk-scaleout {\n      0% {\n        -webkit-transform: scale(0);\n        transform: scale(0);\n      }\n\n      100% {\n        -webkit-transform: scale(1.0);\n        transform: scale(1.0);\n        opacity: 0;\n      }\n    }\n  </style>\n</head>\n\n<body class=\"{{current.page}}\" onload=\"main();\" onunload=\"disconnect();\">\n  <div class='navbar'>\n    <ul>\n      <li><a class=\"normal count\" href=\"/normal\">Queue:\n          <span id=\"normal_count\"></span>/<span id=\"normal_raw\"></span>\n        </a></li>\n      <li><a class=\"vip count\" href=\"/vip\">VIP:\n          <span id=\"vip_count\"></span>/<span id=\"vip_raw\"></span>\n        </a></li>\n      <li><a class=\"alpha count\" href=\"/alpha\">Special:\n          <span id=\"alpha_count\"></span>/<span id=\"alpha_raw\"></span>\n        </a></li>\n      <li><a class=\"testing\" href=\"/testing\">Low Level Controls</a></li>\n      <li style=\"float:right\">\n        <form method=\"post\" action=\"/ESTOP\"><button class=\"button-red\" type=\"submit\">EMERGENCY STOP!</button></form>\n      </li>\n      <li style=\"float:right\"><button id=\"dumpster-control\" onclick=\"toggleDumpster();\">STOP DUMPSTER</button></li>\n      <li style=\"float:right\"><span class=\"message\" id=\"status\"></span></li>\n      <li style=\"float:right\"><span class=\"message\" id=\"messages\"></span></li>\n    </ul>\n  </div>\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"column column-75\">\n        <h1>The Queue has no visible messages.</h1>\n        <p>Don't worry, we'll keep checking in the background, and refresh automatically.</p>\n        <p>If you *know* there's an email waiting, but it's not showing up here, it's possible that someone else has a browser open to this page and grabbed it. Don't worry, after 120s, it will show back up here, if they don't print it!</p>\n        <p class=\"small\">(If you are worried it's broken, there's no harm in refreshing manually.)</p>\n      </div>\n      <div class=\"column column-25\">\n        <div class=\"spinner\"></div>\n      </div>\n    </div>\n  </div>\n  <script type=\"text/javascript\">\n    var queueDepth = 0;\n    var ws;\n    var ctrl;\n    var wsUri = \"ws:\";\n    var loc = window.location;\n    var dumpster_active = true;\n    var curr_count = loc.pathname.substring(1)+\"_raw\";\n    if (loc.protocol === \"https:\") { wsUri = \"wss:\"; }\n    wsUriBase = wsUri + \"//\" + loc.host;\n    statusUri = wsUriBase + \"/ws/status\";\n    controlUri = wsUriBase + \"/ws/control\";\n\n    function wsConnect() {\n      console.log(\"connect\", statusUri);\n      ws = new WebSocket(statusUri);\n\n      ws.onmessage = function (msg) {\n        var data = JSON.parse(msg.data);\n\n        if (\"messages\" in data) {\n          handleMessages(data);\n        }\n      }\n\n      ws.onopen = function () {\n        document.getElementById('status').innerHTML = \"H.E.R.L. Dumpster\";\n      }\n\n      ws.onclose = function () {\n        document.getElementById('status').innerHTML = \"!!\";\n        setTimeout(wsConnect, 3000);\n      }\n    }\n\n    function ctrlConnect() {\n      console.log(\"connect\", controlUri);\n      ctrl = new WebSocket(controlUri);\n\n      ctrl.onmessage = function (msg) {\n        if(msg.data == \"ON\"){\n          dumpster_active = true;\n          document.getElementById(\"dumpster-control\").innerHTML = \"STOP DUMPSTER\";\n        } else {\n          // Set Paused\n          dumpster_active = false;\n          document.getElementById(\"dumpster-control\").innerHTML = \"START DUMPSTER\";\n        }\n      }\n\n      ctrl.onopen = function(){\n        setTimeout(ctrl.send(\"STATUS\"), 500);\n      }\n\n      ctrl.onclose = function () {\n        setTimeout(ctrlConnect, 3000);\n      }\n    }\n\n    // Convenience functions for page load/unload\n    function main() {\n      wsConnect();\n      ctrlConnect();\n    }\n\n    function disconnect(){\n      ws.disconnect();\n      ctrl.disconnect();\n    }\n\n    // Dumpster Control\n    function toggleDumpster(){\n      dumpster_active ? ctrl.send(\"OFF\") : ctrl.send(\"ON\");\n    }\n\n    function disable_buttons(form_id) {\n      form = document.getElementById(form_id);\n      if (typeof (form) !== \"undefined\") {\n        form.querySelectorAll(\"input[type=submit]\").forEach(b => b.disabled = true);\n      }\n    }\n\n    function enable_buttons(form_id) {\n      form = document.getElementById(form_id);\n      if (typeof (form) !== \"undefined\") {\n        form.querySelectorAll(\"input[type=submit]\").forEach(b => b.disabled = false);\n      }\n    }\n\n    function rescan_queue(event) {\n      ws.send(\"rescan\");\n      event.target.disabled = true;\n      event.target.blur();\n    }\n\n    function reload(ws, window) {\n      console.log(\"Reloading!\");\n      ws.close();\n      setTimeout(window.location.reload.bind(window.location), 100)\n    }\n\n    function handleMessages(data) {\n      data.messages.forEach(msg => {\n        switch (msg.type) {\n          case \"QueueDepth\":\n            // If we currently have nothing in the queue, and we get something\n            // refresh the page\n            if (queueDepth == 0 && msg.value > 0 && msg.target == curr_count) {\n              queueDepth = msg.value;\n              setTimeout(window.location.reload.bind(window.location), 2000);\n            }\n            e = document.getElementById(msg.target);\n            if(e) e.innerHTML = msg.value;\n            break;\n\n          case \"Message\":\n\n            break;\n          default:\n            e = document.getElementById(msg.target);\n            if (e) e.innerHTML = msg.value;\n        }\n      })\n    }\n  </script>\n</body>\n\n</html>\n",
+    "x": 190,
+    "y": 80,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "2be6e4ac.ad04fc",
+    "type": "comment",
+    "z": "4d2b5aa1.2e05cc",
+    "name": "JustDeleteIt",
+    "info": "",
+    "x": 190,
+    "y": 80,
+    "wires": []
+  },
+  {
+    "id": "23dca878.212de8",
+    "type": "http in",
+    "z": "f59ea294.3b9c5",
+    "name": "",
+    "url": "/testing",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 170,
+    "y": 160,
+    "wires": [
+      [
+        "c825e63e.36016"
+      ]
+    ]
+  },
+  {
+    "id": "a1756507.cfc9",
+    "type": "template",
+    "z": "f59ea294.3b9c5",
+    "name": "LowLevelHTML",
+    "field": "payload",
+    "fieldType": "msg",
+    "format": "handlebars",
+    "syntax": "mustache",
+    "template": "<html>\n\n<head>\n  <title>hey.science DumpsterFire</title>\n  <meta name=\"viewport\" content=\"initial-scale=1.0, user-scalable=no\">\n  <meta http-equiv=\"Cache-Control\" content=\"no-cache, no-store, must-revalidate\" />\n  <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n  <meta http-equiv=\"Expires\" content=\"0\" />\n  <meta charset=\"utf-8\">\n  <link rel=\"stylesheet\" href=\"//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic\">\n\n  <!-- CSS Reset -->\n  <link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css\">\n\n  <!-- Milligram CSS -->\n  <link rel=\"stylesheet\" href=\"//cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css\">\n  <link rel=\"stylesheet\" href=\"//cdn.jsdelivr.net/gh/loadingio/ldbutton@v1.0.1/dist/ldbtn.min.css\" />\n  <style>\n    .navbar {\n      margin-bottom: 10px;\n    }\n\n    .navbar ul {\n      list-style-type: none;\n      margin: 0;\n      padding: 0;\n      overflow: hidden;\n      background-color: #606c76;\n    }\n\n    .navbar li {\n      float: left;\n      margin-bottom: 0;\n    }\n\n    .navbar li a {\n      display: block;\n      color: white;\n      text-align: center;\n      padding: 14px 16px;\n      text-decoration: none;\n    }\n\n    .navbar li span.message {\n      display: inline-block;\n      color: white;\n      text-align: center;\n      padding: 14px 16px;\n      text-decoration: none;\n    }\n\n    .navbar li a:hover {\n      background-color: #ab5dda;\n    }\n\n    .navbar li a.active {\n      text-decoration: underline;\n      color: #ab5dda;\n      background-color: white;\n    }\n\n    body.alpha .navbar li a.alpha,\n    body.vip .navbar li a.vip,\n    body.normal .navbar li a.normal,\n    body.testing .navbar li a.testing {\n      color: #ab5dda;\n      background-color: white;\n    }\n\n    .navbar li span span {\n      padding: 0;\n    }\n\n    .navbar li a.count {\n      padding: 0.88rem 1rem;\n    }\n\n    .navbar li .count {\n      background-color: #9b4dca;\n      border: none;\n      color: white;\n      padding: .36rem .375rem;\n      text-align: center;\n      display: inline-block;\n      font-weight: 600;\n      font-size: 140%;\n    }\n\n    .navbar form {\n      margin-bottom: 0;\n    }\n\n    .navbar button {\n      margin: 0;\n      display: block;\n      color: white;\n      text-align: center;\n      text-decoration: none;\n      padding: 6.5px 16px;\n      border-radius: 0;\n      height: auto;\n      font-size: 100%;\n    }\n\n    pre>code {\n      white-space: pre-wrap;\n    }\n\n    .button-red {\n      background-color: red;\n      border-color: red;\n    }\n\n    .button-red.button-clear,\n    .button-red.button-outline {\n      background-color: transparent;\n      color: red;\n    }\n\n    .button-red.button-clear {\n      border-color: transparent;\n    }\n\n    .button-green {\n      background-color: #25bc32;\n      border-color: #25bc32;\n    }\n\n    .button-green.button-clear,\n    .button-green.button-outline {\n      background-color: transparent;\n      color: #25bc32;\n    }\n\n    .button-green.button-clear {\n      border-color: transparent;\n    }\n\n    .small {\n      font-size: 70%;\n    }\n\n    fieldset {\n      border-width: 1px;\n      padding: 2rem;\n    }\n\n    legend {\n      padding: 0 1rem;\n    }\n\n    .spinner {\n      width: 40px;\n      height: 40px;\n      margin-top: 10px;\n      background-color: #9b4dca;\n\n      border-radius: 100%;\n      -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;\n      animation: sk-scaleout 1.0s infinite ease-in-out;\n    }\n\n    @-webkit-keyframes sk-scaleout {\n      0% {\n        -webkit-transform: scale(0)\n      }\n\n      100% {\n        -webkit-transform: scale(1.0);\n        opacity: 0;\n      }\n    }\n\n    @keyframes sk-scaleout {\n      0% {\n        -webkit-transform: scale(0);\n        transform: scale(0);\n      }\n\n      100% {\n        -webkit-transform: scale(1.0);\n        transform: scale(1.0);\n        opacity: 0;\n      }\n    }\n  </style>\n</head>\n\n<body class=\"{{current.page}}\" onload=\"main();\" onunload=\"disconnect();\">\n  <div class='navbar'>\n    <ul>\n      <li><a class=\"normal count\" href=\"/normal\">Queue:\n          <span id=\"normal_count\"></span>/<span id=\"normal_raw\"></span>\n        </a></li>\n      <li><a class=\"vip count\" href=\"/vip\">VIP:\n          <span id=\"vip_count\"></span>/<span id=\"vip_raw\"></span>\n        </a></li>\n      <li><a class=\"alpha count\" href=\"/alpha\">Special:\n          <span id=\"alpha_count\"></span>/<span id=\"alpha_raw\"></span>\n        </a></li>\n      <li><a class=\"testing\" href=\"/testing\">Low Level Controls</a></li>\n      <li style=\"float:right\">\n        <form method=\"post\" action=\"/ESTOP\"><button class=\"button-red\" type=\"submit\">EMERGENCY STOP!</button></form>\n      </li>\n      <li style=\"float:right\"><button id=\"dumpster-control\" onclick=\"toggleDumpster();\">STOP DUMPSTER</button></li>\n      <li style=\"float:right\"><span class=\"message\" id=\"status\"></span></li>\n      <li style=\"float:right\"><span class=\"message\" id=\"messages\"></span></li>\n    </ul>\n  </div>\n  <div class=\"container\">\n    <div class=\"row\" style=\"margin-top:4rem\">\n      <div class=\"column column-75\">\n        <h1>Low Level Controls</h1>\n        <p>If you need to test some raw functionality, this is the place.</p>\n        <p class=\"important\">Hit the E-Stop in the upper right to stop belt/fire.</p>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"column column-20\">\n        <form method=\"post\" action=\"/FLAME_ON\">\n          <button style=\"float:right\" type=\"submit\">FIRE ON</button>\n        </form>\n      </div>\n      <div class=\"column column-80\">\n        <h4>Turns the Flame On.</h4>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"column\">\n        <form method=\"post\" action=\"/BELT_ON\">\n          <button style=\"float:right\" type=\"submit\">BELT ON</button>\n        </form>\n      </div>\n      <div class=\"column column-80\">\n        <h4>Turns the Belt On.</h4>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"column\">\n        <a href=\"/SOFT_RESET\" style=\"float:right\" class=\"button\">Allow Printing</a>\n      </div>\n      <div class=\"column column-80\">\n        <h4>Removes the printer soft lockout.</h4>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"column\">\n        <a href=\"/LOCKOUT\" style=\"float:right\" class=\"button\">LockOut Printing</a>\n      </div>\n      <div class=\"column column-80\">\n        <h4>Enables the printer soft lockout.</h4>\n      </div>\n    </div>\n  </div>\n  </div>\n  <script type=\"text/javascript\">\n    var queueDepth = 0;\n    var ws;\n    var ctrl;\n    var wsUri = \"ws:\";\n    var loc = window.location;\n    var dumpster_active = true;\n    var curr_page = loc.pathname.substring(1)+\"_count\";\n    if (loc.protocol === \"https:\") { wsUri = \"wss:\"; }\n    wsUriBase = wsUri + \"//\" + loc.host;\n    statusUri = wsUriBase + \"/ws/status\";\n    controlUri = wsUriBase + \"/ws/control\";\n\n    function wsConnect() {\n      console.log(\"connect\", statusUri);\n      ws = new WebSocket(statusUri);\n\n      ws.onmessage = function (msg) {\n        console.log(data);\n        var data = JSON.parse(msg.data);\n\n        if (\"messages\" in data) {\n          handleMessages(data);\n        }\n      }\n\n      ws.onopen = function () {\n        document.getElementById('status').innerHTML = \"H.E.R.L. Dumpster\";\n      }\n\n      ws.onclose = function () {\n        document.getElementById('status').innerHTML = \"!!\";\n        setTimeout(wsConnect, 3000);\n      }\n    }\n\n    function ctrlConnect() {\n      console.log(\"connect\", controlUri);\n      ctrl = new WebSocket(controlUri);\n\n      ctrl.onmessage = function (msg) {\n        if(msg.data == \"ON\"){\n          dumpster_active = true;\n          document.getElementById(\"dumpster-control\").innerHTML = \"STOP DUMPSTER\";\n        } else {\n          // Set Paused\n          dumpster_active = false;\n          document.getElementById(\"dumpster-control\").innerHTML = \"START DUMPSTER\";\n        }\n      }\n\n      ctrl.onopen = function(){\n        setTimeout(ctrl.send(\"STATUS\"), 500);\n      }\n\n      ctrl.onclose = function () {\n        setTimeout(ctrlConnect, 3000);\n      }\n    }\n\n    // Convenience functions for page load/unload\n    function main() {\n      wsConnect();\n      ctrlConnect();\n    }\n\n    function disconnect(){\n      ws.disconnect();\n      ctrl.disconnect();\n    }\n\n    // Dumpster Control\n    function toggleDumpster(){\n      dumpster_active ? ctrl.send(\"OFF\") : ctrl.send(\"ON\");\n    }\n\n    function disable_buttons(form_id) {\n      form = document.getElementById(form_id);\n      if (typeof (form) !== \"undefined\") {\n        form.querySelectorAll(\"input[type=submit]\").forEach(b => b.disabled = true);\n      }\n    }\n\n    function enable_buttons(form_id) {\n      form = document.getElementById(form_id);\n      if (typeof (form) !== \"undefined\") {\n        form.querySelectorAll(\"input[type=submit]\").forEach(b => b.disabled = false);\n      }\n    }\n\n    function rescan_queue(event) {\n      ws.send(\"rescan\");\n      event.target.disabled = true;\n      event.target.blur();\n    }\n\n    function reload(ws, window) {\n      console.log(\"Reloading!\");\n      ws.close();\n      setTimeout(window.location.reload.bind(window.location), 100)\n    }\n\n    function handleMessages(data) {\n      data.messages.forEach(msg => {\n        switch (msg.type) {\n          case \"Message\":\n            if (msg.state == \"complete\") {\n              console.log(msg.state);\n              setTimeout(function () {\n                window.location.href = \"http://\" + loc.host + \"/dumpster\";\n              }, 1000);\n            }\n            document.getElementById(msg.target).innerHTML = msg.value;\n            setTimeout(function () {\n              document.getElementById(msg.target).innerHTML = \"\";\n            }, 10000);\n            break;\n          default:\n            e = document.getElementById(msg.target);\n            if (e) e.innerHTML = msg.value;\n        }\n      })\n    }\n  </script>\n</body>\n\n</html>\n",
+    "x": 740,
+    "y": 160,
+    "wires": [
+      [
+        "385d142d.d7c894"
+      ]
+    ]
+  },
+  {
+    "id": "385d142d.d7c894",
+    "type": "http response",
+    "z": "f59ea294.3b9c5",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 890,
+    "y": 160,
+    "wires": []
+  },
+  {
+    "id": "83829491.9235b",
+    "type": "http in",
+    "z": "f59ea294.3b9c5",
+    "name": "",
+    "url": "/FLAME_ON",
+    "method": "post",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 190,
+    "y": 220,
+    "wires": [
+      [
+        "54edff7c.f758a8"
+      ]
+    ]
+  },
+  {
+    "id": "54edff7c.f758a8",
+    "type": "function",
+    "z": "f59ea294.3b9c5",
+    "name": "Set Pin Value",
+    "func": "// This does real-life burn-y things with hardware.\n// Be careful and keep it simple\n\n// Don't change stuff below here, please\n\n// Setup our GPIO for Relay 1\nconst Gpio = global.get('onoff').Gpio;\nconst fire_relay = new Gpio(26, 'high');\nconst belt_start_relay = new Gpio(21, 'high');\nconst belt_stop_relay = new Gpio(20, 'high');\nconst ON = 1;\nconst OFF = 0;\nfire_relay.setActiveLow(true);\nbelt_start_relay.setActiveLow(true);\nbelt_stop_relay.setActiveLow(true);\n\nconst activateFire = _ => {\n  console.log(\"FIRE ON\");\n  fire_relay.write(ON).then(value => {\n    console.log(\"FIRE ON CONFIRMED\");\n  }).catch(err => {\n      console.log(err);\n      console.log(\"FIRE OFF\");\n      fire_relay.write(OFF);\n    });\n};\n\nconst stopFire = _ => {\n  console.log(\"FIRE OFF\");\n  fire_relay.write(OFF).then(value => {\n    console.log(\"FIRE OFF CONFIRMED\");\n  })\n}\n\nconst stopBelt = _ => {\n  console.log(\"BELT OFF\");\n  belt_stop_relay.write(ON).then(value => {\n    setTimeout(_ => {\n      belt_stop_relay.writeSync(OFF);\n      console.log(\"BELT OFF CONFIRMED\");\n      }, 1000); \n    });\n}\n\nconst startBelt = _ => {\n  belt_start_relay.write(ON).then(value => {\n    console.log(\"BELT ON\")\n    setTimeout(_ => {\n      belt_start_relay.writeSync(OFF);\n      console.log(\"BELT ON CONFIRMED\");\n      }, 1000); \n  }).catch(err => {\n    console.log(err);\n    console.log(\"BELT OFF\");\n    belt_start_relay.write(OFF);\n  });\n}\n\n\nawait activateFire();\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 370,
+    "y": 220,
+    "wires": [
+      [
+        "a58172c2.5bff2"
+      ]
+    ]
+  },
+  {
+    "id": "1032bd0c.4db18b",
+    "type": "http in",
+    "z": "f59ea294.3b9c5",
+    "name": "",
+    "url": "/ESTOP",
+    "method": "post",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 170,
+    "y": 340,
+    "wires": [
+      [
+        "7aab3eaa.6d8468"
+      ]
+    ]
+  },
+  {
+    "id": "7aab3eaa.6d8468",
+    "type": "function",
+    "z": "f59ea294.3b9c5",
+    "name": "Set Fire Off",
+    "func": "// This does real-life burn-y things with hardware.\n// Be careful and keep it simple\n\n// Don't change stuff below here, please\nconst fs = global.get('fs');\n// Setup our GPIO for Relay 1\nconst Gpio = global.get('onoff').Gpio;\nconst fire_relay = new Gpio(26, 'high');\nconst belt_start_relay = new Gpio(21, 'high');\nconst belt_stop_relay = new Gpio(20, 'high');\nconst ON = 1;\nconst OFF = 0;\nfire_relay.setActiveLow(true);\nbelt_start_relay.setActiveLow(true);\nbelt_stop_relay.setActiveLow(true);\n\nconst activateFire = _ => {\n  console.log(\"FIRE ON\");\n  fire_relay.write(ON).then(value => {\n    console.log(\"FIRE ON CONFIRMED\");\n  }).catch(err => {\n      console.log(err);\n      console.log(\"FIRE OFF\");\n      fire_relay.write(OFF);\n    });\n};\n\nconst stopFire = _ => {\n  console.log(\"FIRE OFF\");\n  fire_relay.write(OFF).then(value => {\n    console.log(\"FIRE OFF CONFIRMED\");\n  })\n}\n\nconst stopBelt = _ => {\n  console.log(\"BELT OFF\");\n  belt_stop_relay.write(ON).then(value => {\n    setTimeout(_ => {\n      belt_stop_relay.writeSync(OFF);\n      console.log(\"BELT OFF CONFIRMED\");\n      }, 1000); \n    });\n}\n\nconst startBelt = _ => {\n  belt_start_relay.write(ON).then(value => {\n    console.log(\"BELT ON\")\n    setTimeout(_ => {\n      belt_start_relay.writeSync(OFF);\n      console.log(\"BELT ON CONFIRMED\");\n      }, 1000); \n  }).catch(err => {\n    console.log(err);\n    console.log(\"BELT OFF\");\n    belt_start_relay.write(OFF);\n  });\n}\n\nglobal.set(\"print_status\", \"idle\");\nglobal.set(\"print_control\", \"OFF\");\n\nawait stopBelt();\nawait stopFire();\ntry{\n    fs.unlinkSync(\"/tmp/burn.lock\");\n} catch(e){\n    console.log(e);\n}\ntry{\n    fs.unlinkSync(\"/tmp/print.lock\");\n} catch(e){\n    console.log(e);\n}\n\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 370,
+    "y": 340,
+    "wires": [
+      [
+        "fbfbc97e.22854"
+      ]
+    ]
+  },
+  {
+    "id": "fbfbc97e.22854",
+    "type": "http response",
+    "z": "f59ea294.3b9c5",
+    "name": "",
+    "statusCode": "302",
+    "headers": {
+      "location": "/testing"
+    },
+    "x": 560,
+    "y": 340,
+    "wires": []
+  },
+  {
+    "id": "c5370efe.14d1a8",
+    "type": "http in",
+    "z": "f59ea294.3b9c5",
+    "name": "",
+    "url": "/BELT_ON",
+    "method": "post",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 180,
+    "y": 280,
+    "wires": [
+      [
+        "f4ba0a61.96e12"
+      ]
+    ]
+  },
+  {
+    "id": "f4ba0a61.96e12",
+    "type": "function",
+    "z": "f59ea294.3b9c5",
+    "name": "Set Pin Value",
+    "func": "// This does real-life burn-y things with hardware.\n// Be careful and keep it simple\n\n// Don't change stuff below here, please\n\n// Setup our GPIO for Relay 1\nconst Gpio = global.get('onoff').Gpio;\nconst fire_relay = new Gpio(26, 'high');\nconst belt_start_relay = new Gpio(21, 'high');\nconst belt_stop_relay = new Gpio(20, 'high');\nconst ON = 1;\nconst OFF = 0;\nfire_relay.setActiveLow(true);\nbelt_start_relay.setActiveLow(true);\nbelt_stop_relay.setActiveLow(true);\n\nconst activateFire = _ => {\n  console.log(\"FIRE ON\");\n  fire_relay.write(ON).then(value => {\n    console.log(\"FIRE ON CONFIRMED\");\n  }).catch(err => {\n      console.log(err);\n      console.log(\"FIRE OFF\");\n      fire_relay.write(OFF);\n    });\n};\n\nconst stopFire = _ => {\n  console.log(\"FIRE OFF\");\n  fire_relay.write(OFF).then(value => {\n    console.log(\"FIRE OFF CONFIRMED\");\n  })\n}\n\nconst stopBelt = _ => {\n  console.log(\"BELT OFF\");\n  belt_stop_relay.write(ON).then(value => {\n    setTimeout(_ => {\n      belt_stop_relay.writeSync(OFF);\n      console.log(\"BELT OFF CONFIRMED\");\n      }, 1000); \n    });\n}\n\nconst startBelt = _ => {\n  belt_start_relay.write(ON).then(value => {\n    console.log(\"BELT ON\")\n    setTimeout(_ => {\n      belt_start_relay.writeSync(OFF);\n      console.log(\"BELT ON CONFIRMED\");\n      }, 1000); \n  }).catch(err => {\n    console.log(err);\n    console.log(\"BELT OFF\");\n    belt_start_relay.write(OFF);\n  });\n}\n\n\nawait startBelt();\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 370,
+    "y": 280,
+    "wires": [
+      [
+        "d89f6312.9cac48"
+      ]
+    ]
+  },
+  {
+    "id": "d89f6312.9cac48",
+    "type": "http response",
+    "z": "f59ea294.3b9c5",
+    "name": "",
+    "statusCode": "302",
+    "headers": {
+      "location": "/testing"
+    },
+    "x": 560,
+    "y": 280,
+    "wires": []
+  },
+  {
+    "id": "1e6bf4ff.dbe793",
+    "type": "inject",
+    "z": "d0d286c.b945c78",
+    "name": "Every 2s",
+    "props": [
+      {
+        "p": "payload"
+      }
+    ],
+    "repeat": "2",
+    "crontab": "",
+    "once": true,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 140,
+    "y": 60,
+    "wires": [
+      [
+        "235206dd.95212a"
+      ]
+    ]
+  },
+  {
+    "id": "2c4adb50.c32304",
+    "type": "websocket out",
+    "z": "d0d286c.b945c78",
+    "name": "",
+    "server": "6ac666d3.8bc48",
+    "client": "",
+    "x": 600,
+    "y": 240,
+    "wires": []
+  },
+  {
+    "id": "eafb8b2a.6f2888",
+    "type": "function",
+    "z": "d0d286c.b945c78",
+    "d": true,
+    "name": "SendQueueDepth",
+    "func": "msg.payload = {};\nmsg.payload.messages = [];\nmsg.payload.messages[0] = {}\n\nmsg.payload.messages[0].type = \"QueueDepth\";\n\nif(typeof global.get(\"QueueDepth\") === \"undefined\"){\n    msg.payload.messages[0].value = 0;\n} else {\n    msg.payload.messages[0].value = global.get(\"QueueDepth\");\n}\n\nmsg.payload.messages[0].target = \"count\";\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 350,
+    "y": 280,
+    "wires": [
+      [
+        "1a469de7.3b916a"
+      ]
+    ]
+  },
+  {
+    "id": "e7051ff0.ec1498",
+    "type": "inject",
+    "z": "d0d286c.b945c78",
+    "d": true,
+    "name": "Every 2s",
+    "props": [
+      {
+        "p": "payload"
+      }
+    ],
+    "repeat": "2",
+    "crontab": "",
+    "once": true,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 140,
+    "y": 280,
+    "wires": [
+      [
+        "eafb8b2a.6f2888"
+      ]
+    ]
+  },
+  {
+    "id": "b9cccaab.307148",
+    "type": "function",
+    "z": "d0d286c.b945c78",
+    "name": "SendPrintStatus",
+    "func": "msg.payload = {};\nmsg.payload.messages = [];\nmsg.payload.messages[0] = {}\n\nmsg.payload.messages[0].type = \"Control\";\n\nif(typeof global.get(\"print_status\") === \"undefined\"){\n    msg.payload.messages[0].value = \"idle\";\n} else {\n    msg.payload.messages[0].value = global.get(\"print_status\");\n}\n\nmsg.payload.messages[0].target = \"print_me\";\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 340,
+    "y": 240,
+    "wires": [
+      [
+        "2c4adb50.c32304"
+      ]
+    ]
+  },
+  {
+    "id": "43640bd4.e8c5bc",
+    "type": "inject",
+    "z": "d0d286c.b945c78",
+    "name": "Every 2s",
+    "props": [
+      {
+        "p": "payload"
+      }
+    ],
+    "repeat": "2",
+    "crontab": "",
+    "once": true,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 140,
+    "y": 240,
+    "wires": [
+      [
+        "b9cccaab.307148"
+      ]
+    ]
+  },
+  {
+    "id": "4970f96f.ce4378",
+    "type": "http in",
+    "z": "f59ea294.3b9c5",
+    "name": "",
+    "url": "/SOFT_RESET",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 190,
+    "y": 400,
+    "wires": [
+      [
+        "42d370be.23faf8"
+      ]
+    ]
+  },
+  {
+    "id": "e952ee58.cde008",
+    "type": "http response",
+    "z": "f59ea294.3b9c5",
+    "name": "",
+    "statusCode": "301",
+    "headers": {
+      "location": "/dumpster"
+    },
+    "x": 560,
+    "y": 400,
+    "wires": []
+  },
+  {
+    "id": "42d370be.23faf8",
+    "type": "function",
+    "z": "f59ea294.3b9c5",
+    "name": "Clear Print Status",
+    "func": "global.set(\"print_status\", \"idle\");\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 390,
+    "y": 400,
+    "wires": [
+      [
+        "e952ee58.cde008"
+      ]
+    ]
+  },
+  {
+    "id": "d10c3088.dd357",
+    "type": "inject",
+    "z": "d0d286c.b945c78",
+    "name": "",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 140,
+    "y": 160,
+    "wires": [
+      [
+        "c96ff0fb.403dc"
+      ]
+    ]
+  },
+  {
+    "id": "c96ff0fb.403dc",
+    "type": "function",
+    "z": "d0d286c.b945c78",
+    "name": "ForceBusy",
+    "func": "global.set(\"print_status\", \"busy\");\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 330,
+    "y": 160,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "9a766092.c80dc8",
+    "type": "inject",
+    "z": "d0d286c.b945c78",
+    "name": "",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 140,
+    "y": 120,
+    "wires": [
+      [
+        "7faad429.91105c"
+      ]
+    ]
+  },
+  {
+    "id": "7faad429.91105c",
+    "type": "function",
+    "z": "d0d286c.b945c78",
+    "name": "ForceIdle",
+    "func": "global.set(\"print_status\", \"idle\");\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 320,
+    "y": 120,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "de562e85.8b581",
+    "type": "http in",
+    "z": "f59ea294.3b9c5",
+    "name": "",
+    "url": "/LOCKOUT",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 180,
+    "y": 460,
+    "wires": [
+      [
+        "e1753d3b.dbd14"
+      ]
+    ]
+  },
+  {
+    "id": "248151b.92d522e",
+    "type": "http response",
+    "z": "f59ea294.3b9c5",
+    "name": "",
+    "statusCode": "301",
+    "headers": {
+      "location": "/dumpster"
+    },
+    "x": 560,
+    "y": 460,
+    "wires": []
+  },
+  {
+    "id": "e1753d3b.dbd14",
+    "type": "function",
+    "z": "f59ea294.3b9c5",
+    "name": "Force Print Status",
+    "func": "global.set(\"print_status\", \"busy\");\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 390,
+    "y": 460,
+    "wires": [
+      [
+        "248151b.92d522e"
+      ]
+    ]
+  },
+  {
+    "id": "6e4f08cf.be9e1",
+    "type": "websocket in",
+    "z": "d0d286c.b945c78",
+    "name": "",
+    "server": "6ac666d3.8bc48",
+    "client": "",
+    "x": 150,
+    "y": 440,
+    "wires": [
+      [
+        "4d119c9c.219d6c"
+      ]
+    ]
+  },
+  {
+    "id": "cb7bfc3e.0a942",
+    "type": "aws sdk",
+    "z": "d0d286c.b945c78",
+    "name": "ReProcessPrintQueue",
+    "func": "console.log(\"ReProcessPrintQueue\");\nvar page = msg.payload == \"dumpster\" ? \"normal\" : msg.payload;\nvar key = page+\"QueueUrl\";\nmsg.payload = JSON.stringify({queue: msg.sqs[key]});\n\nconst lambda = new AWS.Lambda();\nvar params = {\n  FunctionName: \"dumpsterfire-rescreener\",\n  Payload: msg.payload\n };\n\nlambda.invoke(params, function(err, data) {\n   if (err){\n       console.log(err, err.stack); // an error occurred\n       msg.payload = \"Error\"\n       callback(msg);\n   } else {\n       msg.payload = data;\n       callback(msg);           // successful response\n   }     \n });\n",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 680,
+    "y": 440,
+    "wires": [
+      [
+        "f56a0fc9.ddbc68"
+      ]
+    ]
+  },
+  {
+    "id": "b52a089f.4446c",
+    "type": "function",
+    "z": "d0d286c.b945c78",
+    "d": true,
+    "name": "SendQueueRescan",
+    "func": "msg.payload = {};\nmsg.payload.messages = [];\nmsg.payload.messages[0] = {}\n\nmsg.payload.messages[0].type = \"QueueRescan\";\n\nif(typeof global.get(\"QueueRescan\") === \"undefined\"){\n    msg.payload.messages[0].value = \"idle\";\n    msg.payload.messages[0].text = \"rescan queue\"\n} else {\n    msg.payload.messages[0].value = global.get(\"QueueRescan\");\n    if(msg.payload.messages[0].value == \"idle\"){\n        msg.payload.messages[0].text = \"rescan queue\"\n    } else {\n        msg.payload.messages[0].text = \"scanning\"\n    }\n}\n\nmsg.payload.messages[0].target = \"scan-status\";\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 350,
+    "y": 320,
+    "wires": [
+      [
+        "ada95617.7173d8"
+      ]
+    ]
+  },
+  {
+    "id": "5cdaaa5a.7c35e4",
+    "type": "inject",
+    "z": "d0d286c.b945c78",
+    "d": true,
+    "name": "Every 2s",
+    "props": [
+      {
+        "p": "payload"
+      }
+    ],
+    "repeat": "2",
+    "crontab": "",
+    "once": true,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 140,
+    "y": 320,
+    "wires": [
+      [
+        "b52a089f.4446c"
+      ]
+    ]
+  },
+  {
+    "id": "ef2b3b9e.7fb218",
+    "type": "function",
+    "z": "d0d286c.b945c78",
+    "name": "",
+    "func": "global.set(\"QueueRescan\", \"busy\");\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 500,
+    "y": 440,
+    "wires": [
+      [
+        "cb7bfc3e.0a942"
+      ]
+    ]
+  },
+  {
+    "id": "f56a0fc9.ddbc68",
+    "type": "function",
+    "z": "d0d286c.b945c78",
+    "name": "",
+    "func": "global.set(\"QueueRescan\", \"idle\");\n\nvar returned = msg.payload;\nconsole.log(returned);\nmsg.payload = {}\nmsg.payload.messages = [];\nmsg.payload.messages[0] = {}\n\nmsg.payload.messages[0].type = \"Message\";\nif (\"FunctionError\" in returned){\n    msg.payload.messages[0].value = \"Got an error\"\n} else {\n    msg.payload.messages[0].value = \"Re-scanned \"+ returned.Payload;\n}\nmsg.payload.messages[0].state = \"complete\"\nmsg.payload.messages[0].target = \"messages\";\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 860,
+    "y": 440,
+    "wires": [
+      [
+        "8d91ce14.117e8",
+        "395bb1ef.f982a6"
+      ]
+    ]
+  },
+  {
+    "id": "4eafbff4.227b88",
+    "type": "function",
+    "z": "d0d286c.b945c78",
+    "d": true,
+    "name": "SendMessage",
+    "func": "msg.payload = {};\nmsg.payload.messages = [];\nmsg.payload.messages[0] = {}\n\nmsg.payload.messages[0].type = \"Message\";\n\nmsg.payload.messages[0].value = \"Test Message: \"+ Date.now();\n\nmsg.payload.messages[0].target = \"messages\";\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 340,
+    "y": 360,
+    "wires": [
+      [
+        "76a60863.58fbe8"
+      ]
+    ]
+  },
+  {
+    "id": "f0d43b5a.ede148",
+    "type": "inject",
+    "z": "d0d286c.b945c78",
+    "d": true,
+    "name": "",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 140,
+    "y": 360,
+    "wires": [
+      [
+        "4eafbff4.227b88"
+      ]
+    ]
+  },
+  {
+    "id": "8d91ce14.117e8",
+    "type": "debug",
+    "z": "d0d286c.b945c78",
+    "name": "",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "payload",
+    "targetType": "msg",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 850,
+    "y": 380,
+    "wires": []
+  },
+  {
+    "id": "395bb1ef.f982a6",
+    "type": "websocket out",
+    "z": "d0d286c.b945c78",
+    "name": "",
+    "server": "6ac666d3.8bc48",
+    "client": "",
+    "x": 1040,
+    "y": 440,
+    "wires": []
+  },
+  {
+    "id": "1a469de7.3b916a",
+    "type": "websocket out",
+    "z": "d0d286c.b945c78",
+    "d": true,
+    "name": "",
+    "server": "6ac666d3.8bc48",
+    "client": "",
+    "x": 600,
+    "y": 280,
+    "wires": []
+  },
+  {
+    "id": "ada95617.7173d8",
+    "type": "websocket out",
+    "z": "d0d286c.b945c78",
+    "d": true,
+    "name": "",
+    "server": "6ac666d3.8bc48",
+    "client": "",
+    "x": 600,
+    "y": 320,
+    "wires": []
+  },
+  {
+    "id": "76a60863.58fbe8",
+    "type": "websocket out",
+    "z": "d0d286c.b945c78",
+    "d": true,
+    "name": "",
+    "server": "6ac666d3.8bc48",
+    "client": "",
+    "x": 600,
+    "y": 360,
+    "wires": []
+  },
+  {
+    "id": "b1c65354.d1de5",
+    "type": "inject",
+    "z": "d0d286c.b945c78",
+    "name": "",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 140,
+    "y": 500,
+    "wires": [
+      [
+        "ef2b3b9e.7fb218"
+      ]
+    ]
+  },
+  {
+    "id": "ef1ae0d.48bfea",
+    "type": "subflow:4d2b5aa1.2e05cc",
+    "z": "2675acfa.2e92f4",
+    "name": "",
+    "env": [],
+    "x": 680,
+    "y": 80,
+    "wires": [
+      [
+        "57614758.9da5"
+      ]
+    ]
+  },
+  {
+    "id": "8aa438d2.2258b",
+    "type": "http in",
+    "z": "ec49a7ce.ca4ef8",
+    "name": "",
+    "url": "/normal",
+    "method": "post",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 130,
+    "y": 60,
+    "wires": [
+      [
+        "7157c732.adfda8"
+      ]
+    ]
+  },
+  {
+    "id": "6ef41676.df8528",
+    "type": "http response",
+    "z": "ec49a7ce.ca4ef8",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 850,
+    "y": 60,
+    "wires": []
+  },
+  {
+    "id": "7c512546.8f7d54",
+    "type": "switch",
+    "z": "b95a27f8.581ed8",
+    "name": "ActionSwitch",
+    "property": "payload.action",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "else"
+      },
+      {
+        "t": "eq",
+        "v": "print",
+        "vt": "str"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 2,
+    "x": 390,
+    "y": 80,
+    "wires": [
+      [
+        "1a9c5f2a.a73ae1",
+        "d4fa1076.7ebc08"
+      ],
+      [
+        "c169ddbb.1646c8"
+      ]
+    ]
+  },
+  {
+    "id": "e4082960.197798",
+    "type": "function",
+    "z": "b95a27f8.581ed8",
+    "name": "parse payload",
+    "func": "let buff = new Buffer(msg.payload.job, 'base64');\n\nmsg.job = JSON.parse(buff.toString());\n\nmsg.metadata = {};\nmsg.metadata.ReceiptHandle = msg.payload.receipt;\n\nmsg.control.print = msg.payload.print == true ? true : false;\nmsg.control.burn = msg.payload.burn == true ? true : false;\nmsg.control.record = msg.payload.record == true ? true : false;\n\nlet [localPart, domain] = msg.job.email.split(\"@\")\nif ('skip-block-sender-submit' in msg.payload){\n    msg.payload.block = {type: \"senders\", value: msg.job.email};\n}\nif ('skip-block-domain-submit' in msg.payload){\n    msg.payload.block = {type: \"domains\", value: domain};\n}\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 200,
+    "y": 80,
+    "wires": [
+      [
+        "7c512546.8f7d54"
+      ]
+    ]
+  },
+  {
+    "id": "622659f.82e5728",
+    "type": "function",
+    "z": "b95a27f8.581ed8",
+    "name": "SendJobToPhysicalPrinter",
+    "func": "/* This looks complicated, but it's not.\n * 1. Write file to /tmp (tmpfs, in memory)\n * 2. Convert to PDF (either paps or img2pdf)\n * 3. Combine with qpdf blank.pdf and content pdf so we have \n *    a blank first page. \n * 4. Print combined file in duplex mode so it's facing up\n * 5. Clean up files\n */\n\nconst fs = global.get('fs');\nconst lp = global.get('lp');\nconst exec = util.promisify(global.get('child').exec);\n\nconst paps = `/usr/bin/paps --paper=letter --font='${msg.font.name} ${msg.font.size}' `\nconst ps2pdf = \"/usr/bin/ps2pdf - - \"\nconst img2pdf = \"/usr/bin/img2pdf -S Letter -s Letter --first-frame-only -f shrink -o \";\nconst qpdf = \"/usr/bin/qpdf --empty - --pages /home/pi/blank.pdf 1 \";\n\nconst content_file = \"/tmp/\" + msg.job.id;\nconst content_pdf = content_file + \".pdf\";\nconst combined = content_file + \"_combined.pdf\";\n\nconst stripAlpha = (source, target) => {\n  return `/usr/bin/convert ${source} -background white -alpha remove -alpha off ${target}`\n}\n\n// Define our cleanup function\nconst cleanup = async _ => {\n  // Delete print files\n  console.log(\"Cleaning Up \" + msg.job.id);\n\n  if (msg.control.print == true) {\n    await fs.unlink(content_file, (err) => {\n      if (err) console.log(err);\n    });\n    await fs.unlink(content_pdf, (err) => {\n      if (err) console.log(err);\n    });\n    await fs.unlink(combined, (err) => {\n      if (err) console.log(err);\n    });\n  }\n\n  msg.job.print.stop = Date.now();\n  delete msg.job.content;\n  delete msg.job.content_type;\n  delete msg.job.dataURI;\n\n  node.send(msg);\n  node.done();\n}\n\n// 1.\nconst writeContent = _ => {\n  console.log(\"Writing content to \" + content_file);\n  let buff = new Buffer.from(msg.job.content, 'base64');\n  fs.writeFileSync(content_file, buff);\n}\n\n// 2.\nconst writeContentPDF = async _ => {\n  if (msg.job.content_type.includes(\"image\")) {\n    console.log(\"Image File: \" + content_file);\n    if (msg.job.content_type.includes(\"image/png\")){\n      var png_temp = content_file + \".tmp.png\"\n      console.log(\"PNG detected; stripping alpha channel\");\n      var strip_cmd = stripAlpha(content_file, png_temp);\n      await exec(strip_cmd).then((stderr, stdout) => {\n        let stats = fs.statSync(png_temp);\n        console.log(png_temp + \": \"+ stats.size);\n      }).catch((e) => {\n        console.error(e);\n      });\n      fs.renameSync(png_temp, content_file);\n    }\n    var command = img2pdf + content_pdf + \" \" + content_file;\n    console.log(command);\n    // execute img2pdf\n    await exec(command).then((stderr, stdout) => {\n      console.log(content_pdf);\n      let stats = fs.statSync(content_pdf);\n      console.log(content_pdf + \": \" + stats.size);\n    }).catch((e) => {\n      console.error(e);\n    });\n  } else {\n    console.log(\"Text File: \" + content_file);\n    // execute paps\n    cmd = `cat ${content_file} | ${paps} | ${ps2pdf} > ${content_pdf}`;\n    console.log(cmd);\n    await exec(cmd).then((stderr, stdout) => {\n      let stats = fs.statSync(content_pdf);\n      console.log(content_pdf + \": \" + stats.size);\n    }).catch((e) => {\n      console.error(e);\n    });\n  }\n}\n\n// 3. combine with qpdf\nconst combineFiles = async _ => {\n  console.log(\"Generating final PDF: \" + combined);\n  await exec(qpdf + content_pdf + \" 1 -- > \" + combined).then((stderr, stdout) => {\n    let stats = fs.statSync(combined);\n    console.log(combined + \": \" + stats.size);\n  }).catch((e) => {\n    console.error(e);\n  });\n}\n\n4. \nconst printFile = _ => {\n  console.log(\"Printing combined file\");\n  var printer = new lp('Satan_Fart_Devil_Box');\n  // duplex, only print the first 2 pages (blank + content)\n  var options = {\n    o: \"sides=two-sided-short-edge page-list=1-2\"\n  }\n\n  var job = printer.printFile(combined, options);\n\n  // 5.\n  job.on('completed', function () {\n    console.log('Job ' + job.identifier + ' has been printed');\n    if (typeof job !== \"undefined\") {\n      console.log('Job ' + job.identifier + ' has been printed');\n      job.removeAllListeners();\n    }\n    if (typeof printer !== \"undefined\") {\n      printer.destroy();\n    }\n    cleanup();\n  });\n}\n\nasync function main() {\n  console.log(\"Sending File to Printer\");\n  // Start of logic\n  msg.job.main = {};\n  msg.job.print = {};\n  msg.job.main.start = Date.now();\n  msg.job.print.start = Date.now();\n\n  await writeContent();\n  await writeContentPDF();\n  await combineFiles();\n  if (msg.control.print == true) {\n    printFile();\n  } else {\n    cleanup();\n  }\n}\n\nmain();",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 460,
+    "y": 260,
+    "wires": [
+      [
+        "72099aea.1b01b4"
+      ]
+    ],
+    "icon": "font-awesome/fa-print"
+  },
+  {
+    "id": "72099aea.1b01b4",
+    "type": "function",
+    "z": "b95a27f8.581ed8",
+    "name": "FIRE",
+    "func": "// This does real-life burn-y things with hardware.\n// Be careful and keep it simple\n\n// Don't tweak these here anymore;\n// Look for the \"SetMsgValues\" Subflow in the left sidebar!\nvar fire_duration = msg.control.timing.fire.duration;\nvar fire_delay = msg.control.timing.fire.delay;\nvar belt_pre_pause_duration = msg.control.timing.belt.duration.pre;\nvar belt_post_pause_duration = msg.control.timing.belt.duration.post;\nvar belt_pause_duration = msg.control.timing.belt.duration.pause;\nvar camera_delay = msg.control.timing.camera.delay;\n\n// Don't change stuff below here, please\n\n// Setup our GPIO for Relay 1\nconst Gpio = global.get('onoff').Gpio;\nconst fire_relay = new Gpio(26, 'high');\nconst belt_start_relay = new Gpio(21, 'high');\nconst belt_stop_relay = new Gpio(20, 'high');\nconst ON = 1;\nconst OFF = 0;\nfire_relay.setActiveLow(true);\nbelt_start_relay.setActiveLow(true);\nbelt_stop_relay.setActiveLow(true);\n\n// Configure Ustream\nconst Ustream = global.get('ustream');\nconst ustream = new Ustream({\n  username: msg.ibm.username,\n  password: msg.ibm.password,\n  client_id: msg.ibm.client_id,\n  client_secret: msg.ibm.client_secret,\n  token: \"bearer\",\n  type: \"password\"\n})\n\n// Convert to milliseconds for the program\nvar fire_duration_in_millis = fire_duration * 1000;\nvar fire_delay_in_millis = fire_delay * 1000;\nvar belt_pre_pause_in_millis = belt_pre_pause_duration * 1000;\nvar belt_post_pause_in_millis = belt_post_pause_duration * 1000;\nvar belt_pause_duration_in_millis = belt_pause_duration * 1000;\nvar camera_delay_in_millis = camera_delay * 1000;\n\nconst activateFire = _ => {\n  fire_relay.read()\n    .then(value => {\n      console.log(\"FIRE ON\");\n      fire_relay.write(ON);\n    })\n    .catch(err => {\n      console.log(err);\n      console.log(\"FIRE OFF\");\n      fire_relay.write(OFF);\n    });\n};\n\n\nconst startMainRecording = async _ => {\n  // Start recording Camera1 (Main Livestream) and Camera2 (Printer/Belt)\n  ustream.channel.setRecordingStatus(msg.ibm.camera1, \"start\").then((result) => {\n    console.log(\"Started Main Recording for \" + msg.job.id);\n  }).catch((err) => {\n    console.warn(err);\n  });\n}\n\nconst stopMainRecording = async _ => {\n  await ustream.channel.setRecordingStatus(msg.ibm.camera1, \"stop\").then((result) => {\n    console.log(\"Stopped Main Recording for \" + msg.job.id);\n    msg.job.main.video = typeof (result.video) !== \"undefined\" ? result.video.id : \"NONE\";\n  }).catch((err) => {\n    console.warn(\"Error:\");\n    console.warn(err);\n  });\n}\n\nconst stopBelt = _ => {\n  console.log(\"BELT OFF\");\n  belt_stop_relay.write(ON).then(value => { setTimeout(_ => belt_stop_relay.writeSync(OFF), 1000); });\n}\n\nconst startBelt = _ => {\n  belt_start_relay.write(ON).then(value => {\n    console.log(\"BELT ON\")\n    setTimeout(_ => belt_start_relay.writeSync(OFF), 1000); \n  }).catch(err => {\n    console.log(err);\n    console.log(\"BELT OFF\");\n    belt_start_relay.write(OFF);\n  });\n}\n\n\nconst cleanup = async _ => {\n  console.log(\"FIRE OFF\")\n\n  fire_relay.write(OFF);\n\n  msg.job.burn.stop = Date.now();\n  msg.job.main.stop = Date.now();\n  if (msg.control.record == true) {\n    await stopMainRecording();\n  }\n  safety_cleanup();\n\n  node.send(msg);\n  node.done();\n}\n\nconst safety_cleanup = _ => {\n  fire_relay.write(OFF);\n  belt_stop_relay.write(ON).then(value => { setTimeout(_ => belt_stop_relay.writeSync(OFF), 1000); });\n}\n\nif (msg.control.burn == true) {\n  msg.job.burn = {};\n  msg.job.burn.start = Date.now();\n\n  startBelt();\n  if (msg.control.record == true) { setTimeout(startMainRecording, belt_pre_pause_in_millis - camera_delay_in_millis); }\n  // Pause belt at belt_pre_pause_duration for belt_pause_duration seconds,\n  // then start for the remainder of the time\n  setTimeout(stopBelt, belt_pre_pause_in_millis);\n  setTimeout(startBelt, belt_pre_pause_in_millis + belt_pause_duration_in_millis)\n  setTimeout(stopBelt, belt_pre_pause_in_millis + belt_pause_duration_in_millis + belt_post_pause_in_millis);\n\n  // Wait for the delay before we start the fire\n  setTimeout(activateFire, fire_delay_in_millis);\n  // Turn off the fire after the duration + delay is up\n  setTimeout(cleanup, fire_duration_in_millis + fire_delay_in_millis);\n} else {\n  return msg;\n}",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 650,
+    "y": 260,
+    "wires": [
+      [
+        "778fe28f.5af634"
+      ]
+    ],
+    "icon": "font-awesome/fa-fire",
+    "info": "This triggers relays and does real burn-y stuff in the real world."
+  },
+  {
+    "id": "b94aae77.4a35f",
+    "type": "aws sdk",
+    "z": "b95a27f8.581ed8",
+    "name": "DeleteJobFromQueue",
+    "func": "console.log(\"DeleteFromQueue\");\nvar sqs = new AWS.SQS();\nvar params = {\n    QueueUrl: msg.current.queue,\n    ReceiptHandle: msg.metadata.ReceiptHandle\n};\n\ntry {\n  sqs.deleteMessage(params, function(err, data){\n      if (err){\n          console.log(\"Error deleting message\");\n          msg.payload = err;\n          callback(msg);\n      } else {\n          msg.payload = data;\n          delete msg.QueueUrl;\n          delete msg.Message;\n          callback(msg);\n      }\n  });\n} catch(e) {\n  console.log(\"We failed hard: \"+e);\n}",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 220,
+    "y": 320,
+    "wires": [
+      [
+        "c9565aae.2619e"
+      ]
+    ],
+    "icon": "font-awesome/fa-remove"
+  },
+  {
+    "id": "c9565aae.2619e",
+    "type": "aws sdk",
+    "z": "b95a27f8.581ed8",
+    "name": "NotifyCompleted",
+    "func": "console.log(\"NotifyComplete\");\n\nvar sqs = new AWS.SQS();\n\nvar params = {\n  QueueUrl: msg.sqs.completeQueueUrl,\n  MessageBody: JSON.stringify(msg.job),\n  MessageDeduplicationId: msg.job.id,\n  MessageGroupId: \"complete\"\n};\n\nsqs.sendMessage(params, function (err, data) {\n  if (err) {\n    console.log(\"Error sending message\");\n    console.log(err);\n    msg.payload = err;\n    callback(msg);\n  } else {\n    msg.payload = data;\n    callback(msg);\n  }\n});\n",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 430,
+    "y": 320,
+    "wires": [
+      [
+        "92d22604.eee1b"
+      ]
+    ],
+    "icon": "font-awesome/fa-send"
+  },
+  {
+    "id": "c6fcf2f8.3a3718",
+    "type": "comment",
+    "z": "b95a27f8.581ed8",
+    "name": "Print -n- Burn",
+    "info": "",
+    "x": 190,
+    "y": 140,
+    "wires": []
+  },
+  {
+    "id": "9594ebc3.f0e5a8",
+    "type": "credentials",
+    "z": "b95a27f8.581ed8",
+    "name": "IBM Video Credentials",
+    "props": [
+      {
+        "value": "ibm.username",
+        "type": "msg"
+      },
+      {
+        "value": "ibm.password",
+        "type": "msg"
+      },
+      {
+        "value": "ibm.client_id",
+        "type": "msg"
+      },
+      {
+        "value": "ibm.client_secret",
+        "type": "msg"
+      },
+      {
+        "value": "ibm.camera1",
+        "type": "msg"
+      },
+      {
+        "value": "ibm.camera2",
+        "type": "msg"
+      },
+      {
+        "value": "ibm.camera3",
+        "type": "msg"
+      }
+    ],
+    "x": 220,
+    "y": 260,
+    "wires": [
+      [
+        "622659f.82e5728"
+      ]
+    ]
+  },
+  {
+    "id": "778fe28f.5af634",
+    "type": "function",
+    "z": "b95a27f8.581ed8",
+    "name": "Tag Videos",
+    "func": "// Configure Ustream\nconst Ustream = global.get('ustream');\nconst ustream = new Ustream({\n  username: msg.ibm.username,\n  password: msg.ibm.password,\n  client_id: msg.ibm.client_id,\n  client_secret: msg.ibm.client_secret,\n  token: \"bearer\",\n  type: \"password\"\n})\n\nasync function tagVideo(camera, video, id) {\n  if(video != \"NONE\"){\n    await ustream.video.get(video).then((result) => {\n      msg.job[camera].url = result.url;\n      msg.job[camera].thumbnail = result.thumbnail.default;\n      ustream.video.editVideoDetails(video, { title: camera+\"_\"+id }).then((result) => {\n        console.log(`Set title of ${video} to ${camera}_${id}`);\n      });\n    });\n    await ustream.video.getDownloadDetails(video, \"mp4\").then((result) => {\n      msg.job[camera].download_url = result.download_url;\n    });\n  }\n}\n\nconst main = async _ => {\n  await tagVideo(\"main\", msg.job.main.video, msg.job.id);\n  // await tagVideo(\"print\", msg.job.print.video, msg.job.id);\n  // await tagVideo(\"burn\", msg.job.burn.video, msg.job.id);\n\n  node.send(msg);\n  node.done();\n}\n\nif (msg.control.record == true) { \n  main(); \n} else {\n  return msg;\n}\n",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 790,
+    "y": 260,
+    "wires": [
+      [
+        "b94aae77.4a35f"
+      ]
+    ],
+    "icon": "font-awesome/fa-edit"
+  },
+  {
+    "id": "c169ddbb.1646c8",
+    "type": "function",
+    "z": "b95a27f8.581ed8",
+    "name": "StartPrint",
+    "func": "global.set(\"print_status\", \"busy\");\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 180,
+    "y": 200,
+    "wires": [
+      [
+        "14552e16.e2182a"
+      ]
+    ]
+  },
+  {
+    "id": "92d22604.eee1b",
+    "type": "function",
+    "z": "b95a27f8.581ed8",
+    "name": "SetIdleStatus",
+    "func": "global.set(\"print_status\", \"idle\");\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 640,
+    "y": 320,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "ae199ecf.9952a8",
+    "type": "aws sdk",
+    "z": "b95a27f8.581ed8",
+    "name": "WriteRuleToS3",
+    "func": "console.log(\"WriteRuleToS3\");\nvar s3 = new AWS.S3();\nvar params = {\n  Bucket: msg.rules.bucket,\n  Key: msg.rules.key\n};\n\ns3.getObject(params, function(err, data){\n  if (err) {\n    console.log(err, err.stack);\n    msg.payload = err;\n    callback(msg);\n  } else {\n    rules = JSON.parse(data.Body.toString());\n    \n    // create Set from rules array\n    var ruleset = new Set(rules[msg.payload.block.type]);\n    if (! ruleset.has(msg.payload.block.value)){\n        ruleset.add(msg.payload.block.value);\n        rules[msg.payload.block.type] = [...ruleset];\n        \n        // Increment rules version if we updated the rules\n        rules.version++;\n        \n        // Update the rules in S3.\n        rule_params = Object.assign({}, params);\n        rule_params.Body = JSON.stringify(rules);\n\n        s3.putObject(rule_params, function(err, data){\n            if (err) {\n                console.log(err, err.stack);\n                msg.payload = err;\n                callback(msg);\n            } else {\n                msg.payload = {}\n                callback(msg);\n            }\n        })\n    }\n    callback(msg);\n  }\n});",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 820,
+    "y": 80,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "1a9c5f2a.a73ae1",
+    "type": "switch",
+    "z": "b95a27f8.581ed8",
+    "name": "CheckForBlock",
+    "property": "payload",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "hask",
+        "v": "block",
+        "vt": "str"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 1,
+    "x": 640,
+    "y": 80,
+    "wires": [
+      [
+        "ae199ecf.9952a8"
+      ]
+    ]
+  },
+  {
+    "id": "d4fa1076.7ebc08",
+    "type": "subflow:4d2b5aa1.2e05cc",
+    "z": "b95a27f8.581ed8",
+    "name": "PurgeJob",
+    "env": [],
+    "x": 620,
+    "y": 120,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "91573ce.723e4c",
+    "type": "subflow:7dbceb22.f70cf4",
+    "z": "46b89829.e8f2d8",
+    "name": "",
+    "env": [],
+    "x": 610,
+    "y": 60,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "fc336bfc.3e3a68",
+    "type": "aws sdk",
+    "z": "ae167794.18da58",
+    "name": "Set VIP QueueDepth",
+    "func": "var sqs = new AWS.SQS();\nvar params = {\n    QueueUrl: msg.sqs.vip.moderated,\n    AttributeNames: [ \"All\" ]\n};\n\nsqs.getQueueAttributes(params, function(err, data){\n    if (err){\n        console.log(\"Error getting message: \");\n        console.log(err);\n        msg.stats.vip.state = err;\n        msg.stats.vip.count = 0;\n        callback(msg);\n    } else {\n        msg.stats.vip.count = Number(data.Attributes.ApproximateNumberOfMessages);\n        callback(msg);\n    }\n});\n",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 460,
+    "y": 40,
+    "wires": [
+      [
+        "391f7fcb.fa09b"
+      ]
+    ]
+  },
+  {
+    "id": "14dddfde.db4d38",
+    "type": "function",
+    "z": "ae167794.18da58",
+    "name": "Set Total QueueDepth",
+    "func": "\nglobal.set(\"normal.count\", msg.stats.normal.count);\nglobal.set(\"normal.raw\", msg.stats.normal.raw);\nglobal.set(\"vip.count\", msg.stats.vip.count);\nglobal.set(\"vip.raw\", msg.stats.vip.raw);\nglobal.set(\"alpha.count\", msg.stats.alpha.count);\nglobal.set(\"alpha.raw\", msg.stats.alpha.raw);\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 920,
+    "y": 100,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "eaa3cdb9.cf762",
+    "type": "subflow:ae167794.18da58",
+    "z": "46b89829.e8f2d8",
+    "name": "",
+    "env": [],
+    "x": 200,
+    "y": 60,
+    "wires": [
+      [
+        "31089d70.22a18a"
+      ]
+    ]
+  },
+  {
+    "id": "a6bcb4d4.abb248",
+    "type": "subflow:ae167794.18da58",
+    "z": "d0d286c.b945c78",
+    "name": "",
+    "env": [],
+    "x": 520,
+    "y": 60,
+    "wires": [
+      [
+        "97199d2a.3e1748"
+      ]
+    ]
+  },
+  {
+    "id": "9b2f777e.bb7148",
+    "type": "subflow:21a0d81f.c9f93",
+    "z": "46b89829.e8f2d8",
+    "name": "popJob",
+    "env": [
+      {
+        "name": "QUEUE_URL",
+        "value": "msg.sqs.vipQueueUrl",
+        "type": "str"
+      },
+      {
+        "name": "QueueUrl",
+        "value": "msg.sqs.vipQueueUrl",
+        "type": "str"
+      }
+    ],
+    "x": 360,
+    "y": 120,
+    "wires": [
+      [],
+      [
+        "d632d1ef.ba0bc"
+      ]
+    ]
+  },
+  {
+    "id": "d632d1ef.ba0bc",
+    "type": "subflow:2675acfa.2e92f4",
+    "z": "46b89829.e8f2d8",
+    "x": 200,
+    "y": 180,
+    "wires": [
+      [],
+      [
+        "2f65ffa.f181a"
+      ]
+    ]
+  },
+  {
+    "id": "14552e16.e2182a",
+    "type": "subflow:2675acfa.2e92f4",
+    "z": "b95a27f8.581ed8",
+    "name": "",
+    "env": [],
+    "x": 340,
+    "y": 200,
+    "wires": [
+      [],
+      [
+        "9594ebc3.f0e5a8"
+      ]
+    ]
+  },
+  {
+    "id": "7157c732.adfda8",
+    "type": "subflow:7ffb5855.e50d7",
+    "z": "ec49a7ce.ca4ef8",
+    "name": "",
+    "env": [],
+    "x": 320,
+    "y": 60,
+    "wires": [
+      [
+        "be39baac.fe8a38"
+      ]
+    ]
+  },
+  {
+    "id": "3bb7e66a.11a19a",
+    "type": "change",
+    "z": "46b89829.e8f2d8",
+    "name": "",
+    "rules": [
+      {
+        "t": "set",
+        "p": "payload",
+        "pt": "msg",
+        "to": "current.queue",
+        "tot": "msg"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 200,
+    "y": 120,
+    "wires": [
+      [
+        "9b2f777e.bb7148"
+      ]
+    ]
+  },
+  {
+    "id": "840c5ba3.2699e8",
+    "type": "websocket out",
+    "z": "d0d286c.b945c78",
+    "name": "",
+    "server": "6ac666d3.8bc48",
+    "client": "",
+    "x": 920,
+    "y": 60,
+    "wires": []
+  },
+  {
+    "id": "8121ea0f.ba2fd8",
+    "type": "function",
+    "z": "2a2287de.7c1998",
+    "name": "SetCurrent",
+    "func": "let page = msg.req.url.substring(1);\n\nmsg.current = {\n    queue: msg.sqs[page].raw,\n    page: page\n}\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 470,
+    "y": 40,
+    "wires": [
+      [
+        "c63e3eea.0d819"
+      ]
+    ]
+  },
+  {
+    "id": "81c9037c.206018",
+    "type": "function",
+    "z": "21a0d81f.c9f93",
+    "name": "SetRedirect",
+    "func": "msg.headers = [];\nmsg.headers[\"Location\"] = msg.req.url;\nmsg.statusCode = 302;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 610,
+    "y": 80,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "57614758.9da5",
+    "type": "function",
+    "z": "2675acfa.2e92f4",
+    "name": "SetRedirect",
+    "func": "msg.headers[\"Location\"] = msg.req.url;\nmsg.statusCode = 302;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 830,
+    "y": 80,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "8deff065.dbcac",
+    "type": "subflow:7ffb5855.e50d7",
+    "z": "2a2287de.7c1998",
+    "name": "",
+    "env": [],
+    "x": 300,
+    "y": 40,
+    "wires": [
+      [
+        "8121ea0f.ba2fd8"
+      ]
+    ]
+  },
+  {
+    "id": "235206dd.95212a",
+    "type": "subflow:7ffb5855.e50d7",
+    "z": "d0d286c.b945c78",
+    "name": "",
+    "env": [],
+    "x": 340,
+    "y": 60,
+    "wires": [
+      [
+        "a6bcb4d4.abb248"
+      ]
+    ]
+  },
+  {
+    "id": "aba70b6d.f688b8",
+    "type": "http in",
+    "z": "2a2287de.7c1998",
+    "name": "",
+    "url": "/vip",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 100,
+    "y": 120,
+    "wires": [
+      [
+        "69733a6e.03d3c4"
+      ]
+    ]
+  },
+  {
+    "id": "e59ed270.d8ed98",
+    "type": "http response",
+    "z": "2a2287de.7c1998",
+    "name": "",
+    "x": 830,
+    "y": 120,
+    "wires": []
+  },
+  {
+    "id": "855dd7ba.886da",
+    "type": "function",
+    "z": "2a2287de.7c1998",
+    "name": "SetCurrent",
+    "func": "let page = msg.req.url.substring(1);\n\nmsg.current = {\n    queue: msg.sqs[page].raw,\n    page: page\n}\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 470,
+    "y": 120,
+    "wires": [
+      [
+        "c79eab3c.442d18"
+      ]
+    ]
+  },
+  {
+    "id": "69733a6e.03d3c4",
+    "type": "subflow:7ffb5855.e50d7",
+    "z": "2a2287de.7c1998",
+    "name": "",
+    "x": 300,
+    "y": 120,
+    "wires": [
+      [
+        "855dd7ba.886da"
+      ]
+    ]
+  },
+  {
+    "id": "c79eab3c.442d18",
+    "type": "subflow:46b89829.e8f2d8",
+    "z": "2a2287de.7c1998",
+    "name": "",
+    "env": [],
+    "x": 650,
+    "y": 120,
+    "wires": [
+      [
+        "e59ed270.d8ed98"
+      ]
+    ]
+  },
+  {
+    "id": "97199d2a.3e1748",
+    "type": "function",
+    "z": "d0d286c.b945c78",
+    "name": "CountMessageUpdate",
+    "func": "msg.payload = {}\nmsg.payload.messages = [];\nObject.keys(msg.stats).forEach(e => {\n    var data = { type: \"QueueDepth\",\n        value: msg.stats[e].count,\n        target: e+\"_count\"\n    };\n    msg.payload.messages.push(data);\n    data = {\n        type: \"QueueDepth\",\n        value: msg.stats[e].raw,\n        target: e+\"_raw\"\n    }\n    msg.payload.messages.push(data);\n})\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 720,
+    "y": 60,
+    "wires": [
+      [
+        "840c5ba3.2699e8"
+      ]
+    ]
+  },
+  {
+    "id": "c63e3eea.0d819",
+    "type": "subflow:46b89829.e8f2d8",
+    "z": "2a2287de.7c1998",
+    "name": "",
+    "env": [],
+    "x": 650,
+    "y": 40,
+    "wires": [
+      [
+        "d2c0bc2a.05a02"
+      ]
+    ]
+  },
+  {
+    "id": "4d119c9c.219d6c",
+    "type": "subflow:7ffb5855.e50d7",
+    "z": "d0d286c.b945c78",
+    "name": "",
+    "env": [],
+    "x": 340,
+    "y": 440,
+    "wires": [
+      [
+        "ef2b3b9e.7fb218"
+      ]
+    ]
+  },
+  {
+    "id": "1ec73e25.16706a",
+    "type": "http response",
+    "z": "ec49a7ce.ca4ef8",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 850,
+    "y": 140,
+    "wires": []
+  },
+  {
+    "id": "ffe92461.b6a74",
+    "type": "subflow:7ffb5855.e50d7",
+    "z": "ec49a7ce.ca4ef8",
+    "name": "",
+    "env": [],
+    "x": 320,
+    "y": 140,
+    "wires": [
+      [
+        "5d0c649f.e6ec7c"
+      ]
+    ]
+  },
+  {
+    "id": "894622c3.9924b8",
+    "type": "http in",
+    "z": "ec49a7ce.ca4ef8",
+    "name": "",
+    "url": "/vip",
+    "method": "post",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 120,
+    "y": 140,
+    "wires": [
+      [
+        "ffe92461.b6a74"
+      ]
+    ]
+  },
+  {
+    "id": "d1c56f42.814838",
+    "type": "function",
+    "z": "4d2b5aa1.2e05cc",
+    "name": "SetRedirect",
+    "func": "msg.headers = [];\nmsg.headers[\"Location\"] = msg.req.url;\nmsg.statusCode = 302;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 630,
+    "y": 120,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "c825e63e.36016",
+    "type": "subflow:7ffb5855.e50d7",
+    "z": "f59ea294.3b9c5",
+    "name": "",
+    "env": [],
+    "x": 380,
+    "y": 160,
+    "wires": [
+      [
+        "dfba3adf.ca12d8"
+      ]
+    ]
+  },
+  {
+    "id": "dfba3adf.ca12d8",
+    "type": "function",
+    "z": "f59ea294.3b9c5",
+    "name": "SetCurrent",
+    "func": "msg.current = {\n    page: msg.req.url.substring(1)\n}\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 570,
+    "y": 160,
+    "wires": [
+      [
+        "a1756507.cfc9"
+      ]
+    ]
+  },
+  {
+    "id": "a58172c2.5bff2",
+    "type": "http response",
+    "z": "f59ea294.3b9c5",
+    "name": "",
+    "statusCode": "302",
+    "headers": {
+      "location": "/testing"
+    },
+    "x": 560,
+    "y": 220,
+    "wires": []
+  },
+  {
+    "id": "7193284e.50eff",
+    "type": "http in",
+    "z": "2a2287de.7c1998",
+    "name": "",
+    "url": "/alpha",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 100,
+    "y": 200,
+    "wires": [
+      [
+        "2467f633.9550ba"
+      ]
+    ]
+  },
+  {
+    "id": "31ca374b.a1b6d",
+    "type": "http response",
+    "z": "2a2287de.7c1998",
+    "name": "",
+    "x": 830,
+    "y": 200,
+    "wires": []
+  },
+  {
+    "id": "fb0f0416.738db8",
+    "type": "function",
+    "z": "2a2287de.7c1998",
+    "name": "SetCurrent",
+    "func": "let page = msg.req.url.substring(1);\n\nmsg.current = {\n    queue: msg.sqs[page].raw,\n    page: page\n}\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 470,
+    "y": 200,
+    "wires": [
+      [
+        "368211d6.0bd22e"
+      ]
+    ]
+  },
+  {
+    "id": "2467f633.9550ba",
+    "type": "subflow:7ffb5855.e50d7",
+    "z": "2a2287de.7c1998",
+    "name": "",
+    "env": [],
+    "x": 300,
+    "y": 200,
+    "wires": [
+      [
+        "fb0f0416.738db8"
+      ]
+    ]
+  },
+  {
+    "id": "368211d6.0bd22e",
+    "type": "subflow:46b89829.e8f2d8",
+    "z": "2a2287de.7c1998",
+    "name": "",
+    "env": [],
+    "x": 650,
+    "y": 200,
+    "wires": [
+      [
+        "31ca374b.a1b6d"
+      ]
+    ]
+  },
+  {
+    "id": "5d0c649f.e6ec7c",
+    "type": "function",
+    "z": "ec49a7ce.ca4ef8",
+    "name": "SetCurrent",
+    "func": "let page = msg.req.url.substring(1);\n\nmsg.current = {\n    queue: msg.sqs[page],\n    page: page\n}\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 510,
+    "y": 140,
+    "wires": [
+      [
+        "30b3a1ba.febcb6"
+      ]
+    ]
+  },
+  {
+    "id": "be39baac.fe8a38",
+    "type": "function",
+    "z": "ec49a7ce.ca4ef8",
+    "name": "SetCurrent",
+    "func": "let page = msg.req.url.substring(1);\n\nmsg.current = {\n    queue: msg.sqs[page],\n    page: page\n}\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 510,
+    "y": 60,
+    "wires": [
+      [
+        "eb4cbc0f.78567"
+      ]
+    ]
+  },
+  {
+    "id": "bc55b269.27194",
+    "type": "aws sdk",
+    "z": "2f257e7a.6ba06a",
+    "name": "",
+    "func": "console.log(\"ModerateJobStart\");\n\nvar sqs = new AWS.SQS();\n\nvar queue = msg.payload.override == true ? msg.sqs.alpha.moderated : msg.current.queue.moderated;\n\nqueue = msg.payload.debug == true ? msg.sqs.debug.url : queue;\n\nvar params = {\n  QueueUrl: queue,\n  MessageBody: JSON.stringify(msg.job),\n  MessageDeduplicationId: msg.job.id,\n  MessageGroupId: \"moderated\"\n};\n\nsqs.sendMessage(params, function (err, data) {\n  if (err) {\n    console.log(\"Error sending message\");\n    console.log(err);\n    msg.payload = err;\n    callback([null,msg]);\n  } else {\n    msg.payload = data;\n    msg.payload = msg.current.queue.raw\n    callback([msg,null]);\n  }\n});\n",
+    "outputs": 2,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 300,
+    "y": 240,
+    "wires": [
+      [
+        "36118e16.f64fb2"
+      ],
+      [
+        "e432ed74.92d6a"
+      ]
+    ]
+  },
+  {
+    "id": "774a94a5.ea0ea4",
+    "type": "function",
+    "z": "2f257e7a.6ba06a",
+    "name": "parse payload",
+    "func": "let buff = new Buffer(msg.payload.job, 'base64');\n\nmsg.job = JSON.parse(buff.toString());\nconsole.log(msg.job.key);\n\nmsg.metadata = {};\nmsg.metadata.ReceiptHandle = msg.payload.receipt;\n\nlet [localPart, domain] = msg.job.email.split(\"@\")\nif ('skip-block-sender-submit' in msg.payload){\n    msg.payload.block = {type: \"senders\", value: msg.job.email};\n}\nif ('skip-block-domain-submit' in msg.payload){\n    msg.payload.block = {type: \"domains\", value: domain};\n}\n\nif('approve-and-print' in msg.payload){\n    msg.payload.override = true\n}\n\nif('debug' in msg.payload){\n    msg.payload.debug = true\n}\n\nif (msg.payload.action == \"print\" || msg.payload.action == \"debug\"){\n    return [null, msg];\n} else {\n    return [msg, null];\n}",
+    "outputs": 2,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 200,
+    "y": 80,
+    "wires": [
+      [
+        "fdd5361d.88c89",
+        "a9b8c5c0.63dff"
+      ],
+      [
+        "bc55b269.27194"
+      ]
+    ]
+  },
+  {
+    "id": "16f6e4e1.3026c3",
+    "type": "aws sdk",
+    "z": "2f257e7a.6ba06a",
+    "name": "WriteRuleToS3",
+    "func": "console.log(\"WriteRuleToS3\");\nvar s3 = new AWS.S3();\nvar params = {\n  Bucket: msg.rules.bucket,\n  Key: msg.rules.key\n};\n\ns3.getObject(params, function(err, data){\n  if (err) {\n    console.log(err, err.stack);\n    msg.payload = err;\n    callback(msg);\n  } else {\n    rules = JSON.parse(data.Body.toString());\n    \n    // create Set from rules array\n    var ruleset = new Set(rules[msg.payload.block.type]);\n    if (! ruleset.has(msg.payload.block.value)){\n        ruleset.add(msg.payload.block.value);\n        rules[msg.payload.block.type] = [...ruleset];\n        \n        // Increment rules version if we updated the rules\n        rules.version++;\n        \n        // Update the rules in S3.\n        rule_params = Object.assign({}, params);\n        rule_params.Body = JSON.stringify(rules);\n\n        s3.putObject(rule_params, function(err, data){\n            if (err) {\n                console.log(err, err.stack);\n                msg.payload = err;\n                callback(msg);\n            } else {\n                msg.payload = {}\n                callback(msg);\n            }\n        })\n    }\n    callback(msg);\n  }\n});",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 760,
+    "y": 40,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "fdd5361d.88c89",
+    "type": "switch",
+    "z": "2f257e7a.6ba06a",
+    "name": "CheckForBlock",
+    "property": "payload",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "hask",
+        "v": "block",
+        "vt": "str"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 1,
+    "x": 580,
+    "y": 40,
+    "wires": [
+      [
+        "16f6e4e1.3026c3"
+      ]
+    ]
+  },
+  {
+    "id": "adf9a16f.a95728",
+    "type": "subflow:4d2b5aa1.2e05cc",
+    "z": "2f257e7a.6ba06a",
+    "name": "",
+    "env": [],
+    "x": 740,
+    "y": 80,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "eb4cbc0f.78567",
+    "type": "subflow:2f257e7a.6ba06a",
+    "z": "ec49a7ce.ca4ef8",
+    "name": "",
+    "env": [],
+    "x": 690,
+    "y": 60,
+    "wires": [
+      [
+        "6ef41676.df8528"
+      ]
+    ]
+  },
+  {
+    "id": "30b3a1ba.febcb6",
+    "type": "subflow:2f257e7a.6ba06a",
+    "z": "ec49a7ce.ca4ef8",
+    "name": "",
+    "env": [],
+    "x": 690,
+    "y": 140,
+    "wires": [
+      [
+        "1ec73e25.16706a"
+      ]
+    ]
+  },
+  {
+    "id": "391f7fcb.fa09b",
+    "type": "aws sdk",
+    "z": "ae167794.18da58",
+    "name": "Set Alpha QueueDepth",
+    "func": "var sqs = new AWS.SQS();\nvar params = {\n    QueueUrl: msg.sqs.alpha.moderated,\n    AttributeNames: [ \"All\" ]\n};\n\nsqs.getQueueAttributes(params, function(err, data){\n    if (err){\n        console.log(\"Error getting message: \");\n        console.log(err);\n        msg.stats.alpha.state = err;\n        msg.stats.alpha.count = 0;\n        callback(msg);\n    } else {\n        msg.stats.alpha.count = Number(data.Attributes.ApproximateNumberOfMessages);\n        callback(msg);\n    }\n});\n",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 690,
+    "y": 40,
+    "wires": [
+      [
+        "692d01e.e30818"
+      ]
+    ]
+  },
+  {
+    "id": "36118e16.f64fb2",
+    "type": "aws sdk",
+    "z": "2f257e7a.6ba06a",
+    "name": "DeleteJobFromQueue",
+    "func": "console.log(\"PurgeJobFromQueue\")\nvar sqs = new AWS.SQS();\nvar params = {\n    QueueUrl: msg.payload,\n    ReceiptHandle: msg.metadata.ReceiptHandle\n};\n\ntry {\n  sqs.deleteMessage(params, function(err, data){\n      if (err){\n          console.log(\"Error deleting message\");\n          console.log(err);\n          msg.success = false;\n          callback(msg);\n      } else {\n          console.log(\"ModerateJobComplete\")\n          msg.payload = data;\n          delete msg.Message;\n          msg.success = true;\n          callback(msg);\n      }\n  });\n} catch(e) {\n  console.log(\"We failed hard: \"+e);\n}",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 500,
+    "y": 200,
+    "wires": [
+      [
+        "e432ed74.92d6a"
+      ]
+    ],
+    "icon": "font-awesome/fa-remove"
+  },
+  {
+    "id": "e432ed74.92d6a",
+    "type": "function",
+    "z": "2f257e7a.6ba06a",
+    "name": "SetRedirect",
+    "func": "msg.headers = [];\nmsg.headers[\"Location\"] = msg.req.url;\nmsg.statusCode = 302;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 730,
+    "y": 240,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "a9b8c5c0.63dff",
+    "type": "function",
+    "z": "2f257e7a.6ba06a",
+    "name": "SetQueue",
+    "func": "msg.payload = msg.current.queue.raw;\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 560,
+    "y": 80,
+    "wires": [
+      [
+        "adf9a16f.a95728"
+      ]
+    ]
+  },
+  {
+    "id": "692d01e.e30818",
+    "type": "aws sdk",
+    "z": "ae167794.18da58",
+    "name": "Set Normal RawDepth",
+    "func": "var sqs = new AWS.SQS();\nvar params = {\n    QueueUrl: msg.sqs.normal.raw,\n    AttributeNames: [ \"All\" ]\n};\n\nsqs.getQueueAttributes(params, function(err, data){\n    if (err){\n        console.log(\"Error getting message\");\n        console.log(err);\n        msg.stats.normal.state = err;\n        msg.stats.normal.raw = 0\n        callback(msg);\n    } else {\n        msg.stats.normal.raw = Number(data.Attributes.ApproximateNumberOfMessages);\n        callback(msg);\n    }\n});\n",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 220,
+    "y": 100,
+    "wires": [
+      [
+        "8062fb6b.74f198"
+      ]
+    ]
+  },
+  {
+    "id": "8062fb6b.74f198",
+    "type": "aws sdk",
+    "z": "ae167794.18da58",
+    "name": "Set VIP RawDepth",
+    "func": "var sqs = new AWS.SQS();\nvar params = {\n    QueueUrl: msg.sqs.vip.raw,\n    AttributeNames: [ \"All\" ]\n};\n\nsqs.getQueueAttributes(params, function(err, data){\n    if (err){\n        console.log(\"Error getting message: \");\n        console.log(err);\n        msg.stats.vip.state = err;\n        msg.stats.vip.raw = 0;\n        callback(msg);\n    } else {\n        msg.stats.vip.raw = Number(data.Attributes.ApproximateNumberOfMessages);\n        callback(msg);\n    }\n});\n",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 450,
+    "y": 100,
+    "wires": [
+      [
+        "6b3def23.aa77b8"
+      ]
+    ]
+  },
+  {
+    "id": "6b3def23.aa77b8",
+    "type": "aws sdk",
+    "z": "ae167794.18da58",
+    "name": "Set Alpha RawDepth",
+    "func": "var sqs = new AWS.SQS();\nvar params = {\n    QueueUrl: msg.sqs.alpha.raw,\n    AttributeNames: [ \"All\" ]\n};\n\nsqs.getQueueAttributes(params, function(err, data){\n    if (err){\n        console.log(\"Error getting message: \");\n        console.log(err);\n        msg.stats.alpha.state = err;\n        msg.stats.alpha.raw = 0;\n        callback(msg);\n    } else {\n        msg.stats.alpha.raw = Number(data.Attributes.ApproximateNumberOfMessages);\n        callback(msg);\n    }\n});\n",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 680,
+    "y": 100,
+    "wires": [
+      [
+        "14dddfde.db4d38"
+      ]
+    ]
+  },
+  {
+    "id": "31089d70.22a18a",
+    "type": "function",
+    "z": "46b89829.e8f2d8",
+    "name": "QueueCountCheck",
+    "func": "if(msg.stats[msg.current.page].raw > 0){\n    return [null, msg];\n} else {\n    return [msg, null];\n}",
+    "outputs": 2,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 410,
+    "y": 60,
+    "wires": [
+      [
+        "91573ce.723e4c"
+      ],
+      [
+        "3bb7e66a.11a19a"
+      ]
+    ]
+  },
+  {
+    "id": "14c3097e.66845f",
+    "type": "http response",
+    "z": "ec49a7ce.ca4ef8",
+    "name": "",
+    "statusCode": "",
+    "headers": {},
+    "x": 850,
+    "y": 220,
+    "wires": []
+  },
+  {
+    "id": "ac4384b8.39476",
+    "type": "subflow:7ffb5855.e50d7",
+    "z": "ec49a7ce.ca4ef8",
+    "name": "",
+    "env": [],
+    "x": 320,
+    "y": 220,
+    "wires": [
+      [
+        "83ae1b7c.4da1c"
+      ]
+    ]
+  },
+  {
+    "id": "d63a1e34.2fd2a",
+    "type": "http in",
+    "z": "ec49a7ce.ca4ef8",
+    "name": "",
+    "url": "/alpha",
+    "method": "post",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 130,
+    "y": 220,
+    "wires": [
+      [
+        "ac4384b8.39476"
+      ]
+    ]
+  },
+  {
+    "id": "83ae1b7c.4da1c",
+    "type": "function",
+    "z": "ec49a7ce.ca4ef8",
+    "name": "SetCurrent",
+    "func": "let page = msg.req.url.substring(1);\n\nmsg.current = {\n    queue: msg.sqs[page],\n    page: page\n}\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 510,
+    "y": 220,
+    "wires": [
+      [
+        "cba93771.0804f"
+      ]
+    ]
+  },
+  {
+    "id": "cba93771.0804f",
+    "type": "subflow:2f257e7a.6ba06a",
+    "z": "ec49a7ce.ca4ef8",
+    "name": "",
+    "env": [],
+    "x": 690,
+    "y": 220,
+    "wires": [
+      [
+        "14c3097e.66845f"
+      ]
+    ]
+  },
+  {
+    "id": "635ba929.06b37",
+    "type": "http in",
+    "z": "2a2287de.7c1998",
+    "name": "",
+    "url": "/dumpster",
+    "method": "get",
+    "upload": false,
+    "swaggerDoc": "",
+    "x": 130,
+    "y": 320,
+    "wires": [
+      [
+        "d794f344.64389"
+      ]
+    ]
+  },
+  {
+    "id": "d794f344.64389",
+    "type": "http response",
+    "z": "2a2287de.7c1998",
+    "name": "",
+    "statusCode": "301",
+    "headers": {
+      "Location": "/normal"
+    },
+    "x": 350,
+    "y": 320,
+    "wires": []
+  },
+  {
+    "id": "95a22034.b16f9",
+    "type": "inject",
+    "z": "cba59ebe.75887",
+    "name": "",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "5",
+    "crontab": "",
+    "once": true,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 250,
+    "y": 40,
+    "wires": [
+      [
+        "56f3be16.ce24a8"
+      ]
+    ]
+  },
+  {
+    "id": "56f3be16.ce24a8",
+    "type": "delay",
+    "z": "cba59ebe.75887",
+    "name": "",
+    "pauseType": "random",
+    "timeout": "5",
+    "timeoutUnits": "seconds",
+    "rate": "1",
+    "nbRateUnits": "1",
+    "rateUnits": "second",
+    "randomFirst": "1",
+    "randomLast": "3",
+    "randomUnits": "seconds",
+    "drop": false,
+    "x": 440,
+    "y": 40,
+    "wires": [
+      [
+        "192645f3.b674fa"
+      ]
+    ]
+  },
+  {
+    "id": "b53c242.c833758",
+    "type": "aws sdk",
+    "z": "cba59ebe.75887",
+    "name": "GetFileFromS3",
+    "func": "console.log(\"GetFileFromS3 \"+ msg.job.key);\nvar s3 = new AWS.S3();\nvar params = {\n  Bucket: msg.job.bucket,\n  Key: msg.job.key\n};\n\ns3.getObject(params, function(err, data){\n  if (err) {\n    // S3 Object doesn't exist.\n    console.log(err);\n    msg.payload = err;\n    \n    callback([msg,null]);\n  } else {\n    msg.job = Object.assign(msg.job, JSON.parse(data.Body.toString()));\n    callback([null,msg]);\n  }\n});\n",
+    "outputs": 2,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 420,
+    "y": 220,
+    "wires": [
+      [
+        "d07d8463.bc58b8",
+        "d4836340.53689"
+      ],
+      [
+        "f746d837.b61168"
+      ]
+    ],
+    "icon": "font-awesome/fa-cloud-download"
+  },
+  {
+    "id": "ccbbe62b.58859",
+    "type": "function",
+    "z": "cba59ebe.75887",
+    "name": "SendJobToPhysicalPrinter",
+    "func": "/* This looks complicated, but it's not.\n * 1. Write file to /tmp (tmpfs, in memory)\n * 2. Convert to PDF (either paps or img2pdf)\n * 3. Combine with qpdf blank.pdf and content pdf so we have \n *    a blank first page. \n * 4. Print combined file in duplex mode so it's facing up\n * 5. Clean up files\n */\n\nconst fs = global.get('fs');\nconst lp = global.get('lp');\nconst exec = util.promisify(global.get('child').exec);\n\nconst paps = `/usr/bin/paps --paper=letter --font='${msg.font.name} ${msg.font.size}' `\nconst ps2pdf = \"/usr/bin/ps2pdf - - \"\nconst img2pdf = \"/usr/bin/img2pdf -S Letter -s Letter --first-frame-only -f shrink -o \";\nconst qpdf = \"/usr/bin/qpdf --empty - --pages /home/pi/blank.pdf 1 \";\n\nconst content_file = \"/tmp/\" + msg.job.id;\nconst sanitized_file = content_file + \".tmp\";\nconst content_pdf = content_file + \".pdf\";\nconst combined = content_file + \"_combined.pdf\";\n\nconst stripAlpha = (source, target) => {\n  return `/usr/bin/convert ${source}[0] -background white -alpha off ${target}`\n}\n\n// Define our cleanup function\nconst cleanup = async _ => {\n  // Delete print files\n  console.log(\"Cleaning Up \" + msg.job.id);\n\n  if (msg.control.print == true) {\n    await fs.unlink(content_file, (err) => {\n      if (err) console.log(err);\n    });\n    await fs.unlink(content_pdf, (err) => {\n      if (err) console.log(err);\n    });\n    await fs.unlink(combined, (err) => {\n      if (err) console.log(err);\n    });\n    await fs.unlink(sanitized_file, (err) => {\n      if (err) console.log(err);\n    });\n  }\n\n  msg.job.print.stop = Date.now();\n  delete msg.job.content;\n  delete msg.job.content_type;\n  delete msg.job.dataURI;\n\n  node.send(msg);\n  node.done();\n}\n\n// 1.\nconst writeContent = _ => {\n  console.log(\"Writing content to \" + content_file);\n  let buff = new Buffer.from(msg.job.content, 'base64');\n  fs.writeFileSync(content_file, buff);\n}\n\n// 2.\nconst writeContentPDF = async _ => {\n  if (msg.job.content_type.includes(\"image\")) {\n    console.log(\"Image File: \" + content_file);\n\n    var strip_cmd = stripAlpha(content_file, sanitized_file);\n    console.log(strip_cmd);\n    await exec(strip_cmd).then((stderr, stdout) => {\n      let stats = fs.statSync(sanitized_file);\n      console.log(sanitized_file + \": \" + stats.size);\n    }).catch((e) => {\n      console.error(e);\n    });\n\n    var command = img2pdf + content_pdf + \" \" + sanitized_file;\n    console.log(command);\n    // execute img2pdf\n    await exec(command).then((stderr, stdout) => {\n      console.log(content_pdf);\n      let stats = fs.statSync(content_pdf);\n      console.log(content_pdf + \": \" + stats.size);\n    }).catch((e) => {\n      console.error(e);\n    });\n  } else {\n    console.log(\"Text File: \" + content_file);\n    // execute paps\n    cmd = `cat ${content_file} | ${paps} | ${ps2pdf} > ${content_pdf}`;\n    console.log(cmd);\n    await exec(cmd).then((stderr, stdout) => {\n      let stats = fs.statSync(content_pdf);\n      console.log(content_pdf + \": \" + stats.size);\n    }).catch((e) => {\n      console.error(e);\n    });\n  }\n}\n\n// 3. combine with qpdf\nconst combineFiles = async _ => {\n  console.log(\"Generating final PDF: \" + combined);\n  await exec(qpdf + content_pdf + \" 1 -- > \" + combined).then((stderr, stdout) => {\n    let stats = fs.statSync(combined);\n    console.log(combined + \": \" + stats.size);\n  }).catch((e) => {\n    console.error(e);\n  });\n}\n\n// 4. \nconst printFile = _ => {\n  console.log(\"Printing combined file\");\n  var printer = new lp('Satan_Fart_Devil_Box');\n  // duplex, only print the first 2 pages (blank + content)\n  var options = {\n    o: \"sides=two-sided-short-edge page-list=1-2\"\n  }\n\n  var job = printer.printFile(combined, options);\n\n  // 5.\n  job.on('completed', function () {\n    console.log('Job ' + job.identifier + ' has been printed');\n    if (typeof job !== \"undefined\") {\n      console.log('Job ' + job.identifier + ' has been printed');\n      job.removeAllListeners();\n    }\n    if (typeof printer !== \"undefined\") {\n      printer.destroy();\n    }\n    cleanup();\n  });\n}\n\nasync function main() {\n  console.log(\"SendJobToPhysicalPrinter \" + msg.job.key);\n  // Start of logic\n  msg.job.main = {};\n  msg.job.print = {};\n  msg.job.main.start = Date.now();\n  msg.job.print.start = Date.now();\n\n  if (msg.control.print == 1) {\n    await writeContent();\n    await writeContentPDF();\n    await combineFiles();\n\n    printFile();\n  } else {\n    console.log(\"Simulated Print of 20s\");\n    setTimeout(cleanup, 20000);\n  }\n}\n\nmain();",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 860,
+    "y": 260,
+    "wires": [
+      [
+        "3f4c98df.35cc68"
+      ]
+    ],
+    "icon": "font-awesome/fa-print"
+  },
+  {
+    "id": "a491a55f.cb3a6",
+    "type": "function",
+    "z": "cba59ebe.75887",
+    "name": "FIRE",
+    "func": "console.log(\"FIRE \"+ msg.job.key);\n// This does real-life burn-y things with hardware.\n// Be careful and keep it simple\n\n// Don't tweak these here anymore;\n// Look for the \"SetMsgValues\" Subflow in the left sidebar!\nvar fire_duration = msg.control.timing.fire.duration;\nvar fire_delay = msg.control.timing.fire.delay;\nvar belt_pre_pause_duration = msg.control.timing.belt.duration.pre;\nvar belt_post_pause_duration = msg.control.timing.belt.duration.post;\nvar belt_pause_duration = msg.control.timing.belt.duration.pause;\nvar camera_delay = msg.control.timing.camera.delay;\n\n// Don't change stuff below here, please\nconst Gpio = global.get('onoff').Gpio;\nlet fire_relay;\nlet belt_start_relay;\nlet belt_stop_relay;\nconst ON = 1;\nconst OFF = 0;\n\n// Setup our GPIO for Relay 1\nif(msg.control.burn == 1){\n    fire_relay = new Gpio(26, 'high');\n    belt_start_relay = new Gpio(21, 'high');\n    belt_stop_relay = new Gpio(20, 'high');\n    fire_relay.setActiveLow(true);\n    belt_start_relay.setActiveLow(true);\n    belt_stop_relay.setActiveLow(true);\n}\n\n// Configure Ustream\nconst Ustream = global.get('ustream');\nlet ustream;\nif(msg.control.record == 1){\n    ustream = new Ustream({\n        username: msg.ibm.username,\n        password: msg.ibm.password,\n        client_id: msg.ibm.client_id,\n        client_secret: msg.ibm.client_secret,\n        token: \"bearer\",\n        type: \"password\"\n    })\n}\n\n// Convert to milliseconds for the program\nvar fire_duration_in_millis = fire_duration * 1000;\nvar fire_delay_in_millis = fire_delay * 1000;\nvar belt_pre_pause_in_millis = belt_pre_pause_duration * 1000;\nvar belt_post_pause_in_millis = belt_post_pause_duration * 1000;\nvar belt_pause_duration_in_millis = belt_pause_duration * 1000;\nvar camera_delay_in_millis = camera_delay * 1000;\n\nconst activateFire = _ => {\n  fire_relay.read()\n    .then(value => {\n      console.log(\"FIRE ON\");\n      fire_relay.write(ON);\n    })\n    .catch(err => {\n      console.log(err);\n      console.log(\"FIRE OFF\");\n      fire_relay.write(OFF);\n    });\n};\n\n\nconst startMainRecording = async _ => {\n  // Start recording Camera1 (Main Livestream) and Camera2 (Printer/Belt)\n  ustream.channel.setRecordingStatus(msg.ibm.camera1, \"start\").then((result) => {\n    console.log(\"Started Main Recording for \" + msg.job.id);\n  }).catch((err) => {\n    console.warn(err);\n  });\n}\n\nconst stopMainRecording = async _ => {\n  await ustream.channel.setRecordingStatus(msg.ibm.camera1, \"stop\").then((result) => {\n    console.log(\"Stopped Main Recording for \" + msg.job.id);\n    msg.job.main.video = typeof (result.video) !== \"undefined\" ? result.video.id : \"NONE\";\n  }).catch((err) => {\n    console.warn(\"Error:\");\n    console.warn(err);\n  });\n}\n\nconst stopBelt = _ => {\n  console.log(\"BELT OFF\");\n  belt_stop_relay.write(ON).then(value => { setTimeout(_ => belt_stop_relay.writeSync(OFF), 1000); });\n}\n\nconst startBelt = _ => {\n  belt_start_relay.write(ON).then(value => {\n    console.log(\"BELT ON\")\n    setTimeout(_ => belt_start_relay.writeSync(OFF), 1000); \n  }).catch(err => {\n    console.log(err);\n    console.log(\"BELT OFF\");\n    belt_start_relay.write(OFF);\n  });\n}\n\n\nconst cleanup = async _ => {\n  console.log(\"FIRE OFF\")\n\n  fire_relay.write(OFF);\n\n  msg.job.burn.stop = Date.now();\n  msg.job.main.stop = Date.now();\n  if (msg.control.record == 1) {\n    await stopMainRecording();\n  }\n  safety_cleanup();\n\n  node.send(msg);\n  node.done();\n}\n\nconst safety_cleanup = _ => {\n  fire_relay.write(OFF);\n  belt_stop_relay.write(ON).then(value => { setTimeout(_ => belt_stop_relay.writeSync(OFF), 1000); });\n}\n\nif (msg.control.burn == 1) {\n  msg.job.burn = {};\n  msg.job.burn.start = Date.now();\n\n  startBelt();\n  if (msg.control.record == 1) { \n      setTimeout(startMainRecording, belt_pre_pause_in_millis - camera_delay_in_millis); \n      \n  }\n  // Pause belt at belt_pre_pause_duration for belt_pause_duration seconds,\n  // then start for the remainder of the time\n  setTimeout(stopBelt, belt_pre_pause_in_millis);\n  setTimeout(startBelt, belt_pre_pause_in_millis + belt_pause_duration_in_millis)\n  setTimeout(stopBelt, belt_pre_pause_in_millis + belt_pause_duration_in_millis + belt_post_pause_in_millis);\n\n  // Wait for the delay before we start the fire\n  setTimeout(activateFire, fire_delay_in_millis);\n  // Turn off the fire after the duration + delay is up\n  setTimeout(cleanup, fire_duration_in_millis + fire_delay_in_millis);\n} else {\n  console.log(\"Start Simulated Burn\");\n  console.log(\"Belt ON\");\n  setTimeout(function(){\n      console.log(\"Belt OFF\");\n  }, belt_pre_pause_in_millis);\n  setTimeout(function(){\n      console.log(\"Belt ON\");\n  }, belt_pre_pause_in_millis + belt_pause_duration_in_millis);\n  setTimeout(function(){\n      console.log(\"Belt OFF\");\n  }, belt_pre_pause_in_millis + belt_pause_duration_in_millis + belt_post_pause_in_millis);\n  setTimeout(function(){\n      console.log(\"FIRE ON\");\n  }, fire_delay_in_millis);\n  setTimeout(function(){\n      console.log(\"FIRE OFF\");\n      node.send(msg)\n    }, fire_delay_in_millis+fire_duration_in_millis);\n}",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 690,
+    "y": 360,
+    "wires": [
+      [
+        "90396336.83ed28"
+      ]
+    ],
+    "icon": "font-awesome/fa-fire",
+    "info": "This triggers relays and does real burn-y stuff in the real world."
+  },
+  {
+    "id": "e1d9880.646de78",
+    "type": "aws sdk",
+    "z": "cba59ebe.75887",
+    "name": "DeleteJobFromQueue",
+    "func": "console.log(\"DeleteFromQueue \"+ msg.job.key);\nvar sqs = new AWS.SQS();\n\nvar params = {\n    QueueUrl: msg.job.queue,\n    ReceiptHandle: msg.metadata.ReceiptHandle\n};\n\nif(msg.control.cleanup == 1){\n    try {\n      sqs.deleteMessage(params, function(err, data){\n          if (err){\n              console.log(\"Error deleting message\");\n              msg.payload = err;\n              callback(msg);\n          } else {\n              msg.payload = data;\n              delete msg.QueueUrl;\n              delete msg.Message;\n              callback(msg);\n          }\n      });\n    } catch(e) {\n      console.log(\"We failed hard: \"+e);\n    }\n}",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 520,
+    "y": 360,
+    "wires": [
+      [
+        "a491a55f.cb3a6"
+      ]
+    ],
+    "icon": "font-awesome/fa-remove"
+  },
+  {
+    "id": "995cdf6b.faa6c",
+    "type": "aws sdk",
+    "z": "cba59ebe.75887",
+    "name": "NotifyComplete",
+    "func": "console.log(\"NotifyComplete \"+ msg.job.key);\n\nvar sqs = new AWS.SQS();\n\ndelete msg.job.subject;\ndelete msg.job.queue;\ndelete msg.job.scanned_by;\ndelete msg.print;\ndelete msg.burn;\n\nvar params = {\n  QueueUrl: msg.sqs.complete.url,\n  MessageBody: JSON.stringify(msg.job),\n  MessageDeduplicationId: msg.job.id,\n  MessageGroupId: \"complete\"\n};\n\nif(msg.control.notify == 1){\n    \nsqs.sendMessage(params, function (err, data) {\n  if (err) {\n    console.log(\"Error sending message\");\n    console.log(err);\n    msg.payload = err;\n    callback(msg);\n  } else {\n    msg.payload = data;\n    callback(msg);\n  }\n});\n} else {\n    return msg;\n}\n",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 600,
+    "y": 420,
+    "wires": [
+      []
+    ],
+    "icon": "font-awesome/fa-send"
+  },
+  {
+    "id": "4c2bff8b.01a38",
+    "type": "credentials",
+    "z": "cba59ebe.75887",
+    "name": "IBM Video Credentials",
+    "props": [
+      {
+        "value": "ibm.username",
+        "type": "msg"
+      },
+      {
+        "value": "ibm.password",
+        "type": "msg"
+      },
+      {
+        "value": "ibm.client_id",
+        "type": "msg"
+      },
+      {
+        "value": "ibm.client_secret",
+        "type": "msg"
+      },
+      {
+        "value": "ibm.camera1",
+        "type": "msg"
+      }
+    ],
+    "x": 280,
+    "y": 160,
+    "wires": [
+      [
+        "3f2bb018.727138"
+      ]
+    ]
+  },
+  {
+    "id": "686c0f25.bb9d88",
+    "type": "function",
+    "z": "cba59ebe.75887",
+    "name": "TagVideos",
+    "func": "console.log(\"TagVideos \"+ msg.job.key);\n\n// Configure Ustream\nconst Ustream = global.get('ustream');\nconst ustream = new Ustream({\n  username: msg.ibm.username,\n  password: msg.ibm.password,\n  client_id: msg.ibm.client_id,\n  client_secret: msg.ibm.client_secret,\n  token: \"bearer\",\n  type: \"password\"\n})\n\nasync function tagVideo(camera, video, id) {\n  if(video != \"NONE\"){\n    await ustream.video.get(video).then((result) => {\n      msg.job[camera].url = result.url;\n      msg.job[camera].thumbnail = result.thumbnail.default;\n      ustream.video.editVideoDetails(video, { title: camera+\"_\"+id }).then((result) => {\n        console.log(`Set title of ${video} to ${camera}_${id}`);\n      });\n    });\n    await ustream.video.getDownloadDetails(video, \"mp4\").then((result) => {\n      msg.job[camera].download_url = result.download_url;\n    });\n  }\n}\n\nconst main = async _ => {\n  await tagVideo(\"main\", msg.job.main.video, msg.job.id);\n  // await tagVideo(\"print\", msg.job.print.video, msg.job.id);\n  // await tagVideo(\"burn\", msg.job.burn.video, msg.job.id);\n\n  node.send(msg);\n  node.done();\n}\n\nif (msg.control.record == true) { \n  main(); \n} else {\n  return msg;\n}\n",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 430,
+    "y": 420,
+    "wires": [
+      [
+        "995cdf6b.faa6c"
+      ]
+    ],
+    "icon": "font-awesome/fa-edit"
+  },
+  {
+    "id": "3f2bb018.727138",
+    "type": "function",
+    "z": "cba59ebe.75887",
+    "name": "PickQueue",
+    "func": "console.log(\"PickQueue\");\nalpha_count = global.get(\"alpha.count\");\nvip_count = global.get(\"vip.count\");\nnormal_count = global.get(\"normal.count\");\n\n//msg.queue = msg.sqs.alpha.moderated;    \n\nif(alpha_count > 0){\n    msg.queue = msg.sqs.alpha.moderated;    \n} else if(vip_count > 0){\n    msg.queue = msg.sqs.vip.moderated;\n} else {\n    msg.queue = msg.sqs.normal.moderated;\n}\n\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 470,
+    "y": 160,
+    "wires": [
+      [
+        "a0bb4a0.80a3538"
+      ]
+    ]
+  },
+  {
+    "id": "a0bb4a0.80a3538",
+    "type": "aws sdk",
+    "z": "cba59ebe.75887",
+    "name": "GetJobFromQueue",
+    "func": "console.log(\"GetJobFromQueue\");\nvar sqs = new AWS.SQS();\n\nvar params = {\n    QueueUrl: msg.queue,\n    AttributeNames: [ \"All\" ],\n    MaxNumberOfMessages: 1,\n    WaitTimeSeconds: 10,\n    VisibilityTimeout: 120,\n};\n\nsqs.receiveMessage(params, function(err, data){\n    if (err){\n        console.log(\"Error getting message\");\n        console.log(err);\n        msg.payload = err;\n        callback([msg, null]);\n    } else {\n        if (\"Messages\" in data){\n          msg.metadata = data.Messages[0];\n\n          msg.job = JSON.parse(msg.metadata.Body);\n          msg.job.queue = params.QueueUrl;\n          callback([null,msg]);\n        } else {\n          msg.payload = \"No Message\";\n          callback([msg,null]);\n        }\n    }\n});\n",
+    "outputs": 2,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 650,
+    "y": 160,
+    "wires": [
+      [
+        "d4836340.53689"
+      ],
+      [
+        "3f64a560.689c02"
+      ]
+    ]
+  },
+  {
+    "id": "d07d8463.bc58b8",
+    "type": "aws sdk",
+    "z": "cba59ebe.75887",
+    "name": "DeleteJobFromQueue",
+    "func": "console.log(\"PurgeJobFromQueue \"+ msg.job.key)\nvar sqs = new AWS.SQS();\nvar params = {\n    QueueUrl: msg.queue,\n    ReceiptHandle: msg.metadata.ReceiptHandle\n};\n\ntry {\n  sqs.deleteMessage(params, function(err, data){\n      if (err){\n          console.log(\"Error deleting message\");\n          console.log(err);\n          msg.success = false;\n          msg.payload = err;\n          callback(msg);\n      } else {\n          msg.payload = data;\n          delete msg.QueueUrl;\n          delete msg.Message;\n          msg.success = true;\n          callback(msg);\n      }\n  });\n} catch(e) {\n  console.log(\"We failed hard: \"+e);\n}",
+    "outputs": 1,
+    "noerr": 0,
+    "config": "8e34c086.0a708",
+    "x": 660,
+    "y": 220,
+    "wires": [
+      []
+    ],
+    "icon": "font-awesome/fa-remove"
+  },
+  {
+    "id": "192645f3.b674fa",
+    "type": "function",
+    "z": "cba59ebe.75887",
+    "name": "RunGate",
+    "func": "if(global.get(\"print_control\") == \"ON\"){\n    return [null,msg];\n} else {\n    return [msg,null];\n}\n",
+    "outputs": 2,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 560,
+    "y": 100,
+    "wires": [
+      [],
+      [
+        "b3b8dc13.15ec98"
+      ]
+    ]
+  },
+  {
+    "id": "f9373a1f.0b1a58",
+    "type": "websocket in",
+    "z": "cba59ebe.75887",
+    "name": "",
+    "server": "79bc775e.594fc",
+    "client": "",
+    "x": 140,
+    "y": 640,
+    "wires": [
+      [
+        "f0e3a4a0.9b3bb8"
+      ]
+    ]
+  },
+  {
+    "id": "d9ac31ff.507d6",
+    "type": "websocket out",
+    "z": "cba59ebe.75887",
+    "name": "",
+    "server": "79bc775e.594fc",
+    "client": "",
+    "x": 570,
+    "y": 640,
+    "wires": []
+  },
+  {
+    "id": "f0e3a4a0.9b3bb8",
+    "type": "function",
+    "z": "cba59ebe.75887",
+    "name": "SetPrintControl",
+    "func": "console.log(\"SetPrintControlStatus\");\n\nif(msg.payload == \"STATUS\"){\n    msg.payload = global.get(\"print_control\");\n} else if (msg.payload == \"ON\"){\n    global.set(\"print_control\", \"ON\");\n} else {\n    global.set(\"print_control\", \"OFF\");\n}\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 350,
+    "y": 640,
+    "wires": [
+      [
+        "d9ac31ff.507d6"
+      ]
+    ]
+  },
+  {
+    "id": "151ce3d5.b4477c",
+    "type": "subflow:7ffb5855.e50d7",
+    "z": "cba59ebe.75887",
+    "name": "",
+    "env": [],
+    "x": 900,
+    "y": 100,
+    "wires": [
+      [
+        "4c2bff8b.01a38"
+      ]
+    ]
+  },
+  {
+    "id": "d4836340.53689",
+    "type": "function",
+    "z": "cba59ebe.75887",
+    "name": "LogReason",
+    "func": "if(msg.error){\n    console.log(\"LogReason: \" + msg.error.message);    \n} else {\n    console.log(\"LogReason: \"+ msg.payload);\n}\n\nreturn {};",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 250,
+    "y": 100,
+    "wires": [
+      [
+        "56f3be16.ce24a8"
+      ]
+    ]
+  },
+  {
+    "id": "3f64a560.689c02",
+    "type": "function",
+    "z": "cba59ebe.75887",
+    "name": "GetPrintLock",
+    "func": "console.log(\"GetPrintLock \"+ msg.job.key);\nconst fs = global.get('fs');\n\n// Check-and-set-lock\nif (fs.existsSync(msg.control.lock.print)) {\n    throw new Error(\"Lock held by \"+fs.readFileSync(msg.control.lock.print));\n} else {\n    console.log(\"Locking \" + msg.control.lock.print);\n    fs.writeFileSync(msg.control.lock.print, msg.job.id);\n}\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 250,
+    "y": 220,
+    "wires": [
+      [
+        "b53c242.c833758"
+      ]
+    ]
+  },
+  {
+    "id": "3f4c98df.35cc68",
+    "type": "function",
+    "z": "cba59ebe.75887",
+    "name": "GetBurnLockReleasePrint",
+    "func": "console.log(\"GetBurnLockReleasePrint \"+ msg.job.key);\nconst fs = global.get('fs');\n\nconsole.log(\"Checking for \"+msg.control.lock.burn);\n// Check-and-set-lock\nif (fs.existsSync(msg.control.lock.burn)) {\n    msg.payload = \"Burn Lock held by \"+fs.readFileSync(msg.control.lock.burn);\n    return [msg, null];\n} else {\n    console.log(\"Locking \" + msg.control.lock.burn);\n    fs.renameSync(msg.control.lock.print, msg.control.lock.burn);\n    return [null, msg];\n}\n",
+    "outputs": 2,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 270,
+    "y": 360,
+    "wires": [
+      [
+        "a2778b81.46332"
+      ],
+      [
+        "e1d9880.646de78"
+      ]
+    ]
+  },
+  {
+    "id": "a2778b81.46332",
+    "type": "delay",
+    "z": "cba59ebe.75887",
+    "name": "",
+    "pauseType": "random",
+    "timeout": "5",
+    "timeoutUnits": "seconds",
+    "rate": "1",
+    "nbRateUnits": "1",
+    "rateUnits": "second",
+    "randomFirst": "1",
+    "randomLast": "3",
+    "randomUnits": "seconds",
+    "drop": false,
+    "x": 240,
+    "y": 280,
+    "wires": [
+      [
+        "3f4c98df.35cc68"
+      ]
+    ]
+  },
+  {
+    "id": "90396336.83ed28",
+    "type": "function",
+    "z": "cba59ebe.75887",
+    "name": "ReleaseBurnLock",
+    "func": "console.log(\"ReleaseBurnLock \"+ msg.job.key);\nconst fs = global.get('fs');\n\n// Check-and-set-lock\nif (fs.existsSync(msg.control.lock.burn)) {\n    msg.payload = \"Burn Lock held by \"+fs.readFileSync(msg.control.lock.burn);\n    fs.unlinkSync(msg.control.lock.burn);\n} else {\n    console.log(\"Lock \" + msg.control.lock.burn + \" does not exist; continuing.\");\n}\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "x": 250,
+    "y": 420,
+    "wires": [
+      [
+        "686c0f25.bb9d88"
+      ]
+    ]
+  },
+  {
+    "id": "a7443b16.3ead6",
+    "type": "catch",
+    "z": "cba59ebe.75887",
+    "name": "",
+    "scope": null,
+    "uncaught": false,
+    "x": 80,
+    "y": 80,
+    "wires": [
+      [
+        "d4836340.53689"
+      ]
+    ]
+  },
+  {
+    "id": "b3b8dc13.15ec98",
+    "type": "delay",
+    "z": "cba59ebe.75887",
+    "name": "",
+    "pauseType": "rate",
+    "timeout": "5",
+    "timeoutUnits": "seconds",
+    "rate": "1",
+    "nbRateUnits": "43",
+    "rateUnits": "second",
+    "randomFirst": "1",
+    "randomLast": "5",
+    "randomUnits": "seconds",
+    "drop": true,
+    "x": 720,
+    "y": 100,
+    "wires": [
+      [
+        "151ce3d5.b4477c"
+      ]
+    ]
+  },
+  {
+    "id": "f746d837.b61168",
+    "type": "delay",
+    "z": "cba59ebe.75887",
+    "name": "",
+    "pauseType": "delay",
+    "timeout": "10",
+    "timeoutUnits": "seconds",
+    "rate": "1",
+    "nbRateUnits": "1",
+    "rateUnits": "second",
+    "randomFirst": "1",
+    "randomLast": "5",
+    "randomUnits": "seconds",
+    "drop": false,
+    "x": 620,
+    "y": 260,
+    "wires": [
+      [
+        "ccbbe62b.58859"
+      ]
+    ]
+  }
+]

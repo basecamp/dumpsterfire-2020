@@ -1,0 +1,7 @@
+**/vendor/bundle
+**/.terraform
+**/node_modules
+**/.npm
+node-red/*.backup
+**/.env
+**/.creds.yaml

@@ -1,0 +1,8 @@
+[Unit]
+After=network.target
+[Service]
+User=<your-user>
+ExecStart=/path/to/hey-marketing-complete-reply/complete-reply.sh
+Restart=on-failure
+[Install]
+WantedBy=multi-user.target

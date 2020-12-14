@@ -1,0 +1,21 @@
+{
+  "name": "node-red-project",
+  "description": "initially created for you by Node-RED 1.2.2 ",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "node-red-contrib-aws-sdk": "^0.1.8",
+    "node-red-contrib-credentials": "^0.2.1",
+    "node-red-contrib-func-exec": "^0.1.11",
+    "node-red-contrib-play-audio": "^2.5.0",
+    "node-red-node-pi-gpio": "^1.2.1",
+    "node-red-node-ping": "^0.2.1",
+    "node-red-node-random": "^0.2.0",
+    "node-red-node-serialport": "^0.11.0",
+    "node-red-node-smooth": "^0.1.2",
+    "onoff": "^6.0.1",
+    "striptags": "^3.1.1",
+    "ustream-sdk": "^1.12.0",
+    "zuzel-printer": "^1.0.4"
+  }
+}

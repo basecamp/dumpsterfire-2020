@@ -1,0 +1,378 @@
+<html>
+
+<head>
+  <title>hey.science DumpsterFire</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+  <!-- Milligram CSS -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/loadingio/ldbutton@v1.0.1/dist/ldbtn.min.css" />
+  <style>
+    .navbar {
+      margin-bottom: 10px;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #606c76;
+    }
+
+    .navbar li {
+      float: left;
+      margin-bottom: 0;
+    }
+
+    .navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar li span.message {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar li a:hover {
+      background-color: #ab5dda;
+    }
+
+    .navbar li a.active {
+      text-decoration: underline;
+      color: #ab5dda;
+      background-color: white;
+    }
+
+    body.alpha .navbar li a.alpha,
+    body.vip .navbar li a.vip,
+    body.normal .navbar li a.normal,
+    body.testing .navbar li a.testing {
+      color: #ab5dda;
+      background-color: white;
+    }
+
+    .navbar li span span {
+      padding: 0;
+    }
+
+    .navbar li a.count {
+      padding: 0.88rem 1rem;
+    }
+
+    .navbar li .count {
+      background-color: #9b4dca;
+      border: none;
+      color: white;
+      padding: .36rem .375rem;
+      text-align: center;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 140%;
+    }
+
+    .navbar form {
+      margin-bottom: 0;
+    }
+
+    .navbar button {
+      margin: 0;
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      padding: 6.5px 16px;
+      border-radius: 0;
+      height: auto;
+      font-size: 100%;
+    }
+
+    pre>code {
+      white-space: pre-wrap;
+    }
+
+    .button-red {
+      background-color: red;
+      border-color: red;
+    }
+
+    .button-red.button-clear,
+    .button-red.button-outline {
+      background-color: transparent;
+      color: red;
+    }
+
+    .button-red.button-clear {
+      border-color: transparent;
+    }
+
+    .button-green {
+      background-color: #25bc32;
+      border-color: #25bc32;
+    }
+
+    .button-green.button-clear,
+    .button-green.button-outline {
+      background-color: transparent;
+      color: #25bc32;
+    }
+
+    .button-green.button-clear {
+      border-color: transparent;
+    }
+
+    .small {
+      font-size: 70%;
+    }
+
+    fieldset {
+      border-width: 1px;
+      padding: 2rem;
+    }
+
+    legend {
+      padding: 0 1rem;
+    }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      margin-top: 10px;
+      background-color: #9b4dca;
+
+      border-radius: 100%;
+      -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+      animation: sk-scaleout 1.0s infinite ease-in-out;
+    }
+
+    @-webkit-keyframes sk-scaleout {
+      0% {
+        -webkit-transform: scale(0)
+      }
+
+      100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+      }
+    }
+
+    @keyframes sk-scaleout {
+      0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+
+      100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body class="{{current.page}}" onload="main();" onunload="disconnect();">
+  <div class='navbar'>
+    <ul>
+      <li><a class="normal count" href="/normal">Queue:
+          <span id="normal_count"></span>/<span id="normal_raw"></span>
+        </a></li>
+      <li><a class="vip count" href="/vip">VIP:
+          <span id="vip_count"></span>/<span id="vip_raw"></span>
+        </a></li>
+      <li><a class="alpha count" href="/alpha">Special:
+          <span id="alpha_count"></span>/<span id="alpha_raw"></span>
+        </a></li>
+      <li><a class="testing" href="/testing">Low Level Controls</a></li>
+      <li style="float:right">
+        <form method="post" action="/ESTOP"><button class="button-red" type="submit">EMERGENCY STOP!</button></form>
+      </li>
+      <li style="float:right"><button id="dumpster-control" onclick="toggleDumpster();">STOP DUMPSTER</button></li>
+      <li style="float:right"><span class="message" id="status"></span></li>
+      <li style="float:right"><span class="message" id="messages"></span></li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="column column-50">
+        <h1>Email</h1>
+        <p>
+        <pre><code>From: {{{job.email}}}</code></pre>
+        <pre><code>Hey?: {{{job.is_hey}}}</code></pre>
+        </p>
+        <p>
+          {{#job.dataURI}}
+          <img src="{{{job.dataURI}}}" />
+          {{/job.dataURI}}
+          {{#job.strippedContent}}
+        <pre><code>{{{job.strippedContent}}}</code></pre>
+        {{/job.strippedContent}}
+        </p>
+      </div>
+      <div class="column column-50">
+        <div class="row">
+          <div class="column">
+            <form method="post" action="/{{current.page}}">
+              <fieldset>
+                <legend>Happy Path</legend>
+                <input type="hidden" id="receipt" name="receipt" value="{{metadata.ReceiptHandle}}" />
+                <input type="hidden" id="job" name="job" value="{{job.encoded}}" />
+                <input type="hidden" id="action" name="action" value="print" />
+                <input type="hidden" id="print" name="print" value="{{control.print}}" />
+                <input type="hidden" id="burn" name="burn" value="{{control.burn}}" />
+                <input type="hidden" id="record" name="record" value="{{control.record}}" />
+                <p><input type="submit" id="approve" name="approve" class="button-green" value="Approve!"> Put this in the print queue</p>
+                <p><input type="submit" id="approve-and-print" name="approve-and-print" class="button-green vip" value="Approve and Print!"> Skip the queue, print this ASAP!</p>
+              </fieldset>
+            </form>
+            <form id="tools" method="post" action="/{{current.page}}">
+              <fieldset>
+                <legend>Moderation Tools</legend>
+                <input type="hidden" id="receipt" name="receipt" value="{{metadata.ReceiptHandle}}" />
+                <input type="hidden" id="job" name="job" value="{{job.encoded}}" />
+                <input type="hidden" id="action" name="action" value="skip" />
+                <p><input type="submit" name="skip-submit" id="skip-submit" value="Skip This Email!"> or...</p>
+                <p><input type="submit" name="skip-block-sender-submit" id="skip-block-sender-submit"
+                    value="Skip and Block Sender!"> or...</p>
+                <input type="submit" name="skip-block-domain-submit" id="skip-block-domain-submit"
+                  value="Skip and Block Domain!">
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var queueDepth = 0;
+    var ws;
+    var ctrl;
+    var wsUri = "ws:";
+    var loc = window.location;
+    var dumpster_active = true;
+    var curr_page = loc.pathname.substring(1)+"_count";
+    if (loc.protocol === "https:") { wsUri = "wss:"; }
+    wsUriBase = wsUri + "//" + loc.host;
+    statusUri = wsUriBase + "/ws/status";
+    controlUri = wsUriBase + "/ws/control";
+
+    // setup our two websockets with wsConnect/ctrlConnect
+    function wsConnect() {
+      console.log("connect", statusUri);
+      ws = new WebSocket(statusUri);
+
+      ws.onmessage = function (msg) {
+        var data = JSON.parse(msg.data);
+
+        if ("messages" in data) {
+          handleMessages(data);
+        }
+      }
+
+      ws.onopen = function () {
+        document.getElementById('status').innerHTML = "H.E.R.L. Dumpster";
+      }
+
+      ws.onclose = function () {
+        document.getElementById('status').innerHTML = "!!";
+        setTimeout(wsConnect, 3000);
+      }
+    }
+
+    function ctrlConnect() {
+      console.log("connect", controlUri);
+      ctrl = new WebSocket(controlUri);
+
+      ctrl.onmessage = function (msg) {
+        if(msg.data == "ON"){
+          dumpster_active = true;
+          document.getElementById("dumpster-control").innerHTML = "STOP DUMPSTER";
+        } else {
+          // Set Paused
+          dumpster_active = false;
+          document.getElementById("dumpster-control").innerHTML = "START DUMPSTER";
+        }
+      }
+
+      ctrl.onopen = function(){
+        setTimeout(ctrl.send("STATUS"), 500);
+      }
+
+      ctrl.onclose = function () {
+        setTimeout(ctrlConnect, 3000);
+      }
+    }
+
+    // Convenience functions for page load/unload
+    function main() {
+      wsConnect();
+      ctrlConnect();
+    }
+
+    function disconnect(){
+      ws.disconnect();
+      ctrl.disconnect();
+    }
+
+    // Dumpster Control
+    function toggleDumpster(){
+      dumpster_active ? ctrl.send("OFF") : ctrl.send("ON");
+    }
+
+    function reload(ws, window) {
+      console.log("Reloading!");
+      ws.close();
+      setTimeout(window.location.reload.bind(window.location), 100)
+    }
+
+    function replaceContent(target, content){
+      e = document.getElementById(target);
+      if (e) e.innerHTML = content;
+    }
+
+    function handleMessages(data) {
+      data.messages.forEach(msg => {
+        switch (msg.type) {
+          case "Control":
+            break;
+          case "Message":
+            if (msg.state == "complete") {
+              console.log(msg.state);
+              setTimeout(function () {
+                window.location.href = "http://" + loc.host + loc.pathname;
+              }, 1000);
+            }
+            document.getElementById(msg.target).innerHTML = msg.value;
+            setTimeout(function () {
+              document.getElementById(msg.target).innerHTML = "";
+            }, 10000);
+            break;
+          case "QueueDepth":
+            replaceContent(msg.target, msg.value);
+            break;
+          default:
+            console.log(msg);
+            console.log("UNHANDLED MSG TYPE: ", msg.type);
+        }
+      })
+    }
+  </script>
+</body>
+
+</html>
