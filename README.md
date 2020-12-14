@@ -2,6 +2,18 @@
 
 ## Overview
 
+This is the code that handles the email ingest/processing for the Hey Email Research Labs ([HERL](https://hey.science/)) [Dumpsterfire](https://dumpsterfire.email/). All ingest, scanning, filtering, processing, and moderation are handled here.
+
+You will need:
+
+1. AWS account
+2. Domain names
+3. A Raspberry Pi with [node-red](https://nodered.org/)
+4. Familiarity with [Terraform](https://terraform.io/), [AWS Lambda](https://aws.amazon.com/lambda/), [SES](https://aws.amazon.com/ses/), [SQS](https://aws.amazon.com/sqs/), [ruby](https://www.ruby-lang.org/), [node.js](https://nodejs.org/), [node-red](https://nodered.org/), [bash](https://www.gnu.org/software/bash/manual/bash.html), and [jq](https://stedolan.github.io/jq/).
+4. A lot of patience.
+
+## Details
+
 1. Customer emails `dumpsterfire@hey.com`.
 2. AWS SES receives email.
 
